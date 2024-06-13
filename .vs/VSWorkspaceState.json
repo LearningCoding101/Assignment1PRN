@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\FUMiniHotelSystem",
-    "\\FUMiniHotelSystem\\service"
+    ""
   ],
-  "SelectedNode": "\\FUMiniHotelSystem\\service\\CustomerService.cs",
+  "SelectedNode": "\\FUMiniHotelSystem.sln",
   "PreviewInSolutionExplorer": false
 }

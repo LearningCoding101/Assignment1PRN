@@ -45,17 +45,19 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "BCrypt.Net-Next": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[4.0.3, )"
+              "version": "[8.0.6, )"
             },
-            "Microsoft.Extensions.Hosting": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.6, )"
             },
-            "System.Data.Odbc": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.6, )"
             }
           },
           "imports": [

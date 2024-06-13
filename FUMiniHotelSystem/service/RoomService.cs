@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FUMiniHotelSystem.service
 {
-    internal class RoomService
+    public class RoomService
     {
 
     }
