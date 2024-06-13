@@ -23,12 +23,12 @@ public class RoomRepository : IRepository<Room> {
                     while (reader.Read()) {
                         Room room = new Room {
                             RoomID = reader.GetInt32(reader.GetOrdinal("RoomID")),
-                            RoomNumber = reader.GetString(reader.GetOrdinal("RoomNumber")),
-                            RoomDetailDescription = reader.GetString(reader.GetOrdinal("RoomDescription")),
-                            RoomMaxCapacity = reader.GetInt32(reader.GetOrdinal("RoomMaxCapacity")),
+                            RoomNumber = reader.GetString(reader.GetOrdinal("RoomNumber")),                            
+                            RoomDetailDescription = reader.IsDBNull(reader.GetOrdinal("RoomDetailDescription")) ? null : reader.GetString(reader.GetOrdinal("RoomDetailDescription")),
+                            RoomMaxCapacity = reader.IsDBNull(reader.GetOrdinal("RoomMaxCapacity")) ? null : reader.GetInt32(reader.GetOrdinal("RoomMaxCapacity")),
                             RoomTypeID = reader.GetInt32(reader.GetOrdinal("RoomTypeID")),
-                            RoomStatus = reader.GetInt32(reader.GetOrdinal("RoomStatus")),
-                            RoomPricePerDay = reader.GetDecimal(reader.GetOrdinal("RoomPricePerDate"))
+                            RoomStatus = reader.IsDBNull(reader.GetOrdinal("RoomStatus")) ? null : reader.GetInt32(reader.GetOrdinal("RoomStatus")),
+                            RoomPricePerDay = reader.IsDBNull(reader.GetOrdinal("RoomPricePerDay")) ? null : reader.GetDecimal(reader.GetOrdinal("RoomPricePerDay"))
                         };
 
                         rooms.Add(room);
@@ -56,11 +56,11 @@ public class RoomRepository : IRepository<Room> {
                         room = new Room {
                             RoomID = reader.GetInt32(reader.GetOrdinal("RoomID")),
                             RoomNumber = reader.GetString(reader.GetOrdinal("RoomNumber")),
-                            RoomDetailDescription = reader.GetString(reader.GetOrdinal("RoomDescription")),
-                            RoomMaxCapacity = reader.GetInt32(reader.GetOrdinal("RoomMaxCapacity")),
+                            RoomDetailDescription = reader.IsDBNull(reader.GetOrdinal("RoomDetailDescription")) ? null : reader.GetString(reader.GetOrdinal("RoomDetailDescription")),
+                            RoomMaxCapacity = reader.IsDBNull(reader.GetOrdinal("RoomMaxCapacity")) ? null : reader.GetInt32(reader.GetOrdinal("RoomMaxCapacity")),
                             RoomTypeID = reader.GetInt32(reader.GetOrdinal("RoomTypeID")),
-                            RoomStatus = reader.GetInt32(reader.GetOrdinal("RoomStatus")),
-                            RoomPricePerDay = reader.GetDecimal(reader.GetOrdinal("RoomPricePerDate"))
+                            RoomStatus = reader.IsDBNull(reader.GetOrdinal("RoomStatus")) ? null : reader.GetInt32(reader.GetOrdinal("RoomStatus")),
+                            RoomPricePerDay = reader.IsDBNull(reader.GetOrdinal("RoomPricePerDay")) ? null : reader.GetDecimal(reader.GetOrdinal("RoomPricePerDay"))
                         };
                     }
                 }
@@ -71,17 +71,17 @@ public class RoomRepository : IRepository<Room> {
     }
 
     public void Add(Room room) {
-        string query = "INSERT INTO Room (RoomNumber, RoomDescription, RoomMaxCapacity, RoomStatus, RoomPricePerDate, RoomTypeID) " +
+        string query = "INSERT INTO Room (RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay) " +
                        "VALUES (?, ?, ?, ?, ?, ?)";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
                 command.Parameters.AddWithValue("@RoomNumber", room.RoomNumber);
-                command.Parameters.AddWithValue("@RoomDescription", room.RoomDescription);
-                command.Parameters.AddWithValue("@RoomMaxCapacity", room.RoomMaxCapacity);
-                command.Parameters.AddWithValue("@RoomStatus", room.RoomStatus);
-                command.Parameters.AddWithValue("@RoomPricePerDate", room.RoomPricePerDate);
+                command.Parameters.AddWithValue("@RoomDetailDescription", room.RoomDetailDescription ?? (object) DBNull.Value);
+                command.Parameters.AddWithValue("@RoomMaxCapacity", room.RoomMaxCapacity ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@RoomTypeID", room.RoomTypeID);
+                command.Parameters.AddWithValue("@RoomStatus", room.RoomStatus ?? (object) DBNull.Value);
+                command.Parameters.AddWithValue("@RoomPricePerDay", room.RoomPricePerDay ?? (object) DBNull.Value);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -90,17 +90,17 @@ public class RoomRepository : IRepository<Room> {
     }
 
     public void Update(Room room) {
-        string query = "UPDATE Room SET RoomNumber = ?, RoomDescription = ?, RoomMaxCapacity = ?, " +
-                       "RoomStatus = ?, RoomPricePerDate = ?, RoomTypeID = ? WHERE RoomID = ?";
+        string query = "UPDATE Room SET RoomNumber = ?, RoomDetailDescription = ?, RoomMaxCapacity = ?, " +
+                       "RoomTypeID = ?, RoomStatus = ?, RoomPricePerDay = ?  WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
                 command.Parameters.AddWithValue("@RoomNumber", room.RoomNumber);
-                command.Parameters.AddWithValue("@RoomDescription", room.RoomDescription);
-                command.Parameters.AddWithValue("@RoomMaxCapacity", room.RoomMaxCapacity);
-                command.Parameters.AddWithValue("@RoomStatus", room.RoomStatus);
-                command.Parameters.AddWithValue("@RoomPricePerDate", room.RoomPricePerDate);
+                command.Parameters.AddWithValue("@RoomDetailDescription", room.RoomDetailDescription ?? (object) DBNull.Value);
+                command.Parameters.AddWithValue("@RoomMaxCapacity", room.RoomMaxCapacity ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@RoomTypeID", room.RoomTypeID);
+                command.Parameters.AddWithValue("@RoomStatus", room.RoomStatus ?? (object) DBNull.Value);
+                command.Parameters.AddWithValue("@RoomPricePerDay", room.RoomPricePerDay ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@RoomID", room.RoomID);
 
                 connection.Open();
