@@ -25,11 +25,11 @@ public class CustomerRepository : IRepository<Customer> {
                     while (reader.Read()) {
                         Customer customer = new Customer {
                             CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
-                            CustomerFullname = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
+                            CustomerFullName = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
                             Telephone = reader.IsDBNull(reader.GetOrdinal("Telephone")) ? null : reader.GetString(reader.GetOrdinal("Telephone")),
                             EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress")),
                             CustomerBirthday = reader.IsDBNull(reader.GetOrdinal("CustomerBirthday")) ? null : reader.GetDateTime(reader.GetOrdinal("CustomerBirthday")),
-                            CustomerStatus = reader.IsDBNull(reader.GetOrdinal("CustomerStatus")) ? null : reader.GetInt32(reader.GetOrdinal("CustomerStatus")),
+                            CustomerStatus = reader.IsDBNull(reader.GetOrdinal("CustomerStatus")) ? null : reader.GetByte(reader.GetOrdinal("CustomerStatus")),
                             Password = reader.IsDBNull(reader.GetOrdinal("Password")) ? null : reader.GetString(reader.GetOrdinal("Password"))
                         };
 
@@ -57,11 +57,11 @@ public class CustomerRepository : IRepository<Customer> {
                     if (reader.Read()) {
                         customer = new Customer {
                             CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
-                            CustomerFullname = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
+                            CustomerFullName = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
                             Telephone = reader.IsDBNull(reader.GetOrdinal("Telephone")) ? null : reader.GetString(reader.GetOrdinal("Telephone")),
                             EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress")),
                             CustomerBirthday = reader.IsDBNull(reader.GetOrdinal("CustomerBirthday")) ? null : reader.GetDateTime(reader.GetOrdinal("CustomerBirthday")),
-                            CustomerStatus = reader.IsDBNull(reader.GetOrdinal("CustomerStatus")) ? null : reader.GetInt32(reader.GetOrdinal("CustomerStatus")),
+                            CustomerStatus = reader.IsDBNull(reader.GetOrdinal("CustomerStatus")) ? null : reader.GetByte(reader.GetOrdinal("CustomerStatus")),
                             Password = reader.IsDBNull(reader.GetOrdinal("Password")) ? null : reader.GetString(reader.GetOrdinal("Password"))
                         };
                     }
@@ -78,7 +78,7 @@ public class CustomerRepository : IRepository<Customer> {
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
-                command.Parameters.AddWithValue("@CustomerFullname", customer.CustomerFullname ?? (object) DBNull.Value);
+                command.Parameters.AddWithValue("@CustomerFullname", customer.CustomerFullName ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@Telephone", customer.Telephone ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@EmailAddress", customer.EmailAddress);
                 command.Parameters.AddWithValue("@CustomerBirthday", customer.CustomerBirthday ?? (object) DBNull.Value);
@@ -97,7 +97,7 @@ public class CustomerRepository : IRepository<Customer> {
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
-                command.Parameters.AddWithValue("@CustomerFullname", customer.CustomerFullname ?? (object) DBNull.Value);
+                command.Parameters.AddWithValue("@CustomerFullname", customer.CustomerFullName ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@Telephone", customer.Telephone ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@EmailAddress", customer.EmailAddress);
                 command.Parameters.AddWithValue("@CustomerBirthday", customer.CustomerBirthday ?? (object) DBNull.Value);

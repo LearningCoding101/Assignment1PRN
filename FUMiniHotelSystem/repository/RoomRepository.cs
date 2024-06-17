@@ -28,7 +28,7 @@ public class RoomRepository : IRepository<Room> {
                             RoomDetailDescription = reader.IsDBNull(reader.GetOrdinal("RoomDetailDescription")) ? null : reader.GetString(reader.GetOrdinal("RoomDetailDescription")),
                             RoomMaxCapacity = reader.IsDBNull(reader.GetOrdinal("RoomMaxCapacity")) ? null : reader.GetInt32(reader.GetOrdinal("RoomMaxCapacity")),
                             RoomTypeID = reader.GetInt32(reader.GetOrdinal("RoomTypeID")),
-                            RoomStatus = reader.IsDBNull(reader.GetOrdinal("RoomStatus")) ? null : reader.GetInt32(reader.GetOrdinal("RoomStatus")),
+                            RoomStatus = reader.IsDBNull(reader.GetOrdinal("RoomStatus")) ? null : reader.GetByte(reader.GetOrdinal("RoomStatus")),
                             RoomPricePerDay = reader.IsDBNull(reader.GetOrdinal("RoomPricePerDay")) ? null : reader.GetDecimal(reader.GetOrdinal("RoomPricePerDay"))
                         };
 
@@ -60,7 +60,7 @@ public class RoomRepository : IRepository<Room> {
                             RoomDetailDescription = reader.IsDBNull(reader.GetOrdinal("RoomDetailDescription")) ? null : reader.GetString(reader.GetOrdinal("RoomDetailDescription")),
                             RoomMaxCapacity = reader.IsDBNull(reader.GetOrdinal("RoomMaxCapacity")) ? null : reader.GetInt32(reader.GetOrdinal("RoomMaxCapacity")),
                             RoomTypeID = reader.GetInt32(reader.GetOrdinal("RoomTypeID")),
-                            RoomStatus = reader.IsDBNull(reader.GetOrdinal("RoomStatus")) ? null : reader.GetInt32(reader.GetOrdinal("RoomStatus")),
+                            RoomStatus = reader.IsDBNull(reader.GetOrdinal("RoomStatus")) ? null : reader.GetByte(reader.GetOrdinal("RoomStatus")),
                             RoomPricePerDay = reader.IsDBNull(reader.GetOrdinal("RoomPricePerDay")) ? null : reader.GetDecimal(reader.GetOrdinal("RoomPricePerDay"))
                         };
                     }

@@ -28,7 +28,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
                             BookingDate = reader.IsDBNull(reader.GetOrdinal("BookingDate")) ? null : reader.GetDateTime(reader.GetOrdinal("BookingDate")),
                             TotalPrice = reader.IsDBNull(reader.GetOrdinal("TotalPrice")) ? (decimal?) null : reader.GetDecimal(reader.GetOrdinal("TotalPrice")),
                             CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
-                            BookingStatus = reader.IsDBNull(reader.GetOrdinal("BookingStatus")) ? null : reader.GetInt32(reader.GetOrdinal("BookingStatus"))
+                            BookingStatus = reader.IsDBNull(reader.GetOrdinal("BookingStatus")) ? null : reader.GetByte(reader.GetOrdinal("BookingStatus"))
                         };
 
                         bookingReservations.Add(bookingReservation);
@@ -58,7 +58,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
                             BookingDate = reader.IsDBNull(reader.GetOrdinal("BookingDate")) ? null : reader.GetDateTime(reader.GetOrdinal("BookingDate")),
                             TotalPrice = reader.IsDBNull(reader.GetOrdinal("TotalPrice")) ? null : reader.GetDecimal(reader.GetOrdinal("TotalPrice")),
                             CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
-                            BookingStatus = reader.IsDBNull(reader.GetOrdinal("BookingStatus")) ? null : reader.GetInt32(reader.GetOrdinal("BookingStatus"))
+                            BookingStatus = reader.IsDBNull(reader.GetOrdinal("BookingStatus")) ? null : reader.GetByte(reader.GetOrdinal("BookingStatus"))
                         };
                     }
                 }
