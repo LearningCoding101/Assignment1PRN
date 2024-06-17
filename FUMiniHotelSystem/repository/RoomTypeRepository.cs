@@ -12,7 +12,7 @@ public class RoomTypeRepository : IRepository<RoomType>{
         _connectionString = connectionString;
     }
 
-    public List<RoomType> GetAll() {
+    internal List<RoomType> GetAll() {
         List<RoomType> roomTypes = new List<RoomType>();
 
         string query = "SELECT RoomTypeID, RoomTypeName, TypeDescription, TypeNote FROM RoomType";
@@ -38,7 +38,7 @@ public class RoomTypeRepository : IRepository<RoomType>{
         return roomTypes;
     }
 
-    public RoomType GetById(int roomTypeId) {
+    internal RoomType GetById(int roomTypeId) {
         RoomType roomType = null;
 
         string query = "SELECT RoomTypeID, RoomTypeName, TypeDescription, TypeNote " +
@@ -65,7 +65,7 @@ public class RoomTypeRepository : IRepository<RoomType>{
         return roomType;
     }
 
-    public void Add(RoomType roomType) {
+    internal void Add(RoomType roomType) {
         string query = "INSERT INTO RoomType (RoomTypeName, TypeDescription, TypeNote) " +
                        "VALUES (?, ?, ?)";
 
@@ -81,7 +81,7 @@ public class RoomTypeRepository : IRepository<RoomType>{
         }
     }
 
-    public void Update(RoomType roomType) {
+    internal void Update(RoomType roomType) {
         string query = "UPDATE RoomType SET RoomTypeName = ?, TypeDescription = ?, TypeNote = ? " +
                        "WHERE RoomTypeID = ?";
 
@@ -98,7 +98,7 @@ public class RoomTypeRepository : IRepository<RoomType>{
         }
     }
 
-    public void Delete(int roomTypeId) {
+    internal void Delete(int roomTypeId) {
         string query = "DELETE FROM RoomType WHERE RoomTypeID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

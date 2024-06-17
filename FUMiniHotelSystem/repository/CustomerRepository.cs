@@ -12,7 +12,7 @@ public class CustomerRepository : IRepository<Customer> {
         _connectionString = connectionString;
     }
 
-    public List<Customer> GetAll() {
+    internal List<Customer> GetAll() {
         List<Customer> customers = new List<Customer>();
 
         string query = "SELECT CustomerID, CustomerFullname, Telephone, EmailAddress, CustomerBirthday, CustomerStatus, Password " +
@@ -42,7 +42,7 @@ public class CustomerRepository : IRepository<Customer> {
         return customers;
     }
 
-    public Customer GetById(int customerId) {
+    internal Customer GetById(int customerId) {
         Customer customer = null;
 
         string query = "SELECT CustomerID, CustomerFullname, Telephone, EmailAddress, CustomerBirthday, CustomerStatus, Password " +
@@ -72,7 +72,7 @@ public class CustomerRepository : IRepository<Customer> {
         return customer;
     }
 
-    public void Add(Customer customer) {
+    internal void Add(Customer customer) {
         string query = "INSERT INTO Customer (CustomerFullname, Telephone, EmailAddress, CustomerBirthday, CustomerStatus, Password) " +
                        "VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -91,7 +91,7 @@ public class CustomerRepository : IRepository<Customer> {
         }
     }
 
-    public void Update(Customer customer) {
+    internal void Update(Customer customer) {
         string query = "UPDATE Customer SET CustomerFullname = ?, Telephone = ?, EmailAddress = ?, " +
                        "CustomerBirthday = ?, CustomerStatus = ?, Password = ? WHERE CustomerID = ?";
 
@@ -111,7 +111,7 @@ public class CustomerRepository : IRepository<Customer> {
         }
     }
 
-    public void Delete(int customerId) {
+    internal void Delete(int customerId) {
         string query = "DELETE FROM Customer WHERE CustomerID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

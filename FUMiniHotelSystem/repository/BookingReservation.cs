@@ -5,14 +5,14 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Odbc;
 
-public class BookingReservationRepository : IRepository<BookingReservation>{
+public class BookingReservationRepository: IRepository<BookingReservation> {
     private readonly string _connectionString;
 
     public BookingReservationRepository(string connectionString) {
         _connectionString = connectionString;
     }
 
-    public List<BookingReservation> GetAll() {
+    internal List<BookingReservation> GetAll() {
         List<BookingReservation> bookingReservations = new List<BookingReservation>();
 
         string query = "SELECT BookingReservationID, RoomID, BookingDate, TotalPrice, CustomerID, BookingStatus " +
@@ -40,7 +40,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
         return bookingReservations;
     }
 
-    public BookingReservation GetById(int bookingReservationId) {
+    internal BookingReservation GetById(int bookingReservationId) {
         BookingReservation bookingReservation = null;
 
         string query = "SELECT BookingReservationID, RoomID, BookingDate, TotalPrice, CustomerID, BookingStatus " +
@@ -68,7 +68,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
         return bookingReservation;
     }
 
-    public void Add(BookingReservation bookingReservation) {
+    internal void Add(BookingReservation bookingReservation) {
         string query = "INSERT INTO BookingReservation (BookingReservationID, BookingDate, TotalPrice, CustomerID, BookingStatus) " +
                        "VALUES (?, ?, ?, ?, ?)";
 
@@ -86,7 +86,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
         }
     }
 
-    public void Update(BookingReservation bookingReservation) {
+    internal void Update(BookingReservation bookingReservation) {
         string query = "UPDATE BookingReservation SET RoomID = ?, BookingDate = ?, TotalPrice = ?, " +
                        "CustomerID = ?, BookingStatus = ? WHERE BookingReservationID = ?";
 
@@ -104,7 +104,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
         }
     }
 
-    public void Delete(int bookingReservationId) {
+    internal void Delete(int bookingReservationId) {
         string query = "DELETE FROM BookingReservation WHERE BookingReservationID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

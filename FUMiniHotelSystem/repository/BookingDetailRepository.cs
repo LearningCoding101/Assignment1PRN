@@ -14,7 +14,7 @@ public class BookingDetailRepository : IRepository<BookingDetail>
         _connectionString = connectionString;
     }
 
-    public List<BookingDetail> GetAll()
+    internal List<BookingDetail> GetAll()
     {
         var bookingDetails = new List<BookingDetail>();
 
@@ -47,7 +47,7 @@ public class BookingDetailRepository : IRepository<BookingDetail>
         return bookingDetails;
     }
 
-    public BookingDetail GetById(int id)
+    internal BookingDetail GetById(int id)
     {
         BookingDetail bookingDetail = null;
 
@@ -80,7 +80,7 @@ public class BookingDetailRepository : IRepository<BookingDetail>
         return bookingDetail;
     }
 
-    public void Add(BookingDetail bookingDetail)
+    internal void Add(BookingDetail bookingDetail)
     {
         string query = "INSERT INTO BookingDetail (BookingReservationID, RoomID, StartDate, EndDate, ActualPrice) VALUES (?, ?, ?, ?, ?)";
 
@@ -100,7 +100,7 @@ public class BookingDetailRepository : IRepository<BookingDetail>
         }
     }
 
-    public void Update(BookingDetail bookingDetail)
+    internal void Update(BookingDetail bookingDetail)
     {
         string query = "UPDATE BookingDetail SET StartDate = ?, EndDate = ?, ActualPrice = ? WHERE BookingReservationID = ? AND RoomID = ?";
 
@@ -120,7 +120,7 @@ public class BookingDetailRepository : IRepository<BookingDetail>
         }
     }
 
-    public void Delete(int id)
+    internal void Delete(int id)
     {
         string query = "DELETE FROM BookingDetail WHERE BookingReservationID = ?";
 
