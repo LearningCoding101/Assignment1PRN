@@ -1,4 +1,5 @@
 ﻿using FUMiniHotelSystem;
+using FUMiniHotelSystem.model;
 using System;
 using System.Collections.Generic;
 using System.Data;
