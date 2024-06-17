@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FUMiniHotelSystem.model
 {
-    internal class Customer
+    public class Customer
     {
         public int CustomerID { get; set; }
         public string CustomerFullName { get; set; }

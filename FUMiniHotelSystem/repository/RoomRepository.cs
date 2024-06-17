@@ -12,7 +12,7 @@ public class RoomRepository : IRepository<Room> {
         _connectionString = connectionString;
     }
 
-    internal List<Room> GetAll() {
+    public List<Room> GetAll() {
         List<Room> rooms = new List<Room>();
 
         string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay FROM Room";
@@ -41,7 +41,7 @@ public class RoomRepository : IRepository<Room> {
         return rooms;
     }
 
-    internal Room GetById(int roomId) {
+    public Room GetById(int roomId) {
         Room room = null;
 
         string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDate " +
@@ -71,7 +71,7 @@ public class RoomRepository : IRepository<Room> {
         return room;
     }
 
-    internal void Add(Room room) {
+    public void Add(Room room) {
         string query = "INSERT INTO Room (RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay) " +
                        "VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -90,7 +90,7 @@ public class RoomRepository : IRepository<Room> {
         }
     }
 
-    internal void Update(Room room) {
+    public void Update(Room room) {
         string query = "UPDATE Room SET RoomNumber = ?, RoomDetailDescription = ?, RoomMaxCapacity = ?, " +
                        "RoomTypeID = ?, RoomStatus = ?, RoomPricePerDay = ?  WHERE RoomID = ?";
 
@@ -110,7 +110,7 @@ public class RoomRepository : IRepository<Room> {
         }
     }
 
-    internal void Delete(int roomId) {
+    public void Delete(int roomId) {
         string query = "DELETE FROM Room WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FUMiniHotelSystem.model
 {
-    internal class BookingDetail
+    public class BookingDetail
     {
         public int BookingReservationID { get; set; }
         public int RoomID { get; set; }
