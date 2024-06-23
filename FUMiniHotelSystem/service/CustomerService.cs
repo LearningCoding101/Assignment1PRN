@@ -1,4 +1,6 @@
-﻿using FUMiniHotelSystem.model;
+﻿using FUMiniHotelSystem.dto;
+using FUMiniHotelSystem.model;
+using FUMiniHotelSystem.utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,31 +11,58 @@ namespace FUMiniHotelSystem.service
 {
     internal class CustomerService
     {
-        public List<Customer> GetAllCustomers()
+        private readonly CustomerRepository _customerRepository;
+        public CustomerService(CustomerRepository customerRepository)
         {
-            return null;
+            _customerRepository = customerRepository;
         }
-        public Customer GetCustomerById(long id)
+        public List<CustomerDTO> GetAllCustomers()
         {
-            return null;
+            List<CustomerDTO> result = new List<CustomerDTO>();
+
+            List<Customer> customerList = _customerRepository.GetAll();
+            for(int i = 0; i < customerList.Count; i++)
+            {
+                result.Add(CustomerMapper.MapCustomerToCustomerDTO(customerList[i]));
+            }
+
+            return result;
+        }
+        public CustomerDTO GetCustomerById(int id)
+        {
+            return CustomerMapper.MapCustomerToCustomerDTO(_customerRepository.GetById(id));
         }
 
-        public bool AddCustomer(Customer customer) {
-            return false;
+        public void AddCustomer(CustomerDTO customer) {
+            _customerRepository.Add(CustomerMapper.MapCustomerDTOToCustomer(customer));
         }
-        public bool UpdateCustomer(Customer customer)
+        public void UpdateCustomer(CustomerDTO customer)
         {
-            return false;
+            _customerRepository.Update(CustomerMapper.MapCustomerDTOToCustomer(customer));
         }
 
-        public bool DeleteCustomer(long id)
+        public void DeleteCustomer(int id)
         {
-            return false;
+            _customerRepository.Delete(id);
         }
 
-        public Customer SearchCustomer(string keyword)
+        public CustomerDTO? SearchCustomer(string keyword)
         {
-            return null;
+            List<Customer> customers = _customerRepository.GetAll();
+
+            foreach (var customer in customers)
+            {
+                CustomerDTO customerDTO = CustomerMapper.MapCustomerToCustomerDTO(customer);
+
+                if ((!string.IsNullOrEmpty(customerDTO.CustomerFullName) && customerDTO.CustomerFullName.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0) ||
+                    (!string.IsNullOrEmpty(customerDTO.EmailAddress) && customerDTO.EmailAddress.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0))
+                {
+                    return customerDTO; 
+                }
+            }
+
+            return null; 
         }
+
     }
 }
