@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FUMiniHotelSystem.model
+namespace FUMiniHotelSystem.dto
 {
-    public class Room
+    public class RoomDTO
     {
         public int RoomID { get; set; }
         public string RoomNumber { get; set; }
         public string RoomDetailDescription { get; set; }
         public int? RoomMaxCapacity { get; set; }
-        public int RoomTypeID { get; set; }
+        public RoomTypeDTO? RoomType { get; set; }
         public byte? RoomStatus { get; set; }
         public decimal? RoomPricePerDay { get; set; }
     }
