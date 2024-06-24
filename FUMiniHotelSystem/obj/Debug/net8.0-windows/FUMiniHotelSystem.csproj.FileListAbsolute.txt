@@ -1,5 +1,0 @@
-D:\workingPRN\FUMiniHotelSystem\FUMiniHotelSystem\obj\Debug\net8.0-windows\FUMiniHotelSystem.csproj.AssemblyReference.cache
-D:\workingPRN\FUMiniHotelSystem\FUMiniHotelSystem\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\workingPRN\FUMiniHotelSystem\FUMiniHotelSystem\obj\Debug\net8.0-windows\App.g.cs
-D:\workingPRN\FUMiniHotelSystem\FUMiniHotelSystem\obj\Debug\net8.0-windows\FUMiniHotelSystem_MarkupCompile.cache
-D:\workingPRN\FUMiniHotelSystem\FUMiniHotelSystem\obj\Debug\net8.0-windows\FUMiniHotelSystem_MarkupCompile.lref

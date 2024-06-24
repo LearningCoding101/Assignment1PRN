@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FUMiniHotelSystem.service
 {
-    internal class RoomService
+    public class RoomService
     {
         private readonly RoomRepository _roomRepository;
         private readonly RoomTypeRepository _roomTypeRepository;

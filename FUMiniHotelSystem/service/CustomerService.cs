@@ -1,4 +1,4 @@
-﻿using FUMiniHotelSystem.dto;
+using FUMiniHotelSystem.dto;
 using FUMiniHotelSystem.model;
 using FUMiniHotelSystem.utility;
 using System;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FUMiniHotelSystem.service
 {
-    internal class CustomerService
+    public class CustomerService
     {
         private readonly CustomerRepository _customerRepository;
         public CustomerService(CustomerRepository customerRepository)
