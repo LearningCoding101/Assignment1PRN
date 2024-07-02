@@ -1,5 +1,8 @@
-﻿using FUMiniHotelSystem.viewModel.admin.room;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,22 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FUMiniHotelSystem
+namespace FUMiniHotelSystem.viewModel.admin.room
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for viewRoom.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class viewRoom : Page
     {
-        public MainWindow()
+        public viewRoom()
         {
             InitializeComponent();
-        }
-
-        private void NavigateTest(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new viewRoom());
-
         }
     }
 }

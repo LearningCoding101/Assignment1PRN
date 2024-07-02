@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="viewModel\admin\" />
     <Folder Include="viewModel\customer\" />
   </ItemGroup>
 

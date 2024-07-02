@@ -97,3 +97,5 @@ D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\ref\FUMiniHotelSystem.dll
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\MainWindow.baml
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\room\viewRoom.g.cs
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\room\viewRoom.baml

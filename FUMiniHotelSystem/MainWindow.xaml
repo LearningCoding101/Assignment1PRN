@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Frame x:Name="MainFrame" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="790"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button Content="AdminRoomTest" Click="NavigateTest" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>
