@@ -11,7 +11,7 @@ namespace FUMiniHotelSystem.model
         public int BookingReservationID { get; set; }
         public DateTime? BookingDate { get; set; }
         public decimal? TotalPrice { get; set; }
-        public int CustomerID { get; set; }
+        public int CustomerId { get; set; }
         public byte? BookingStatus { get; set; }
     }
 }

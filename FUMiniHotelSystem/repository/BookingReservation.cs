@@ -27,7 +27,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
                             BookingReservationID = reader.GetInt32(reader.GetOrdinal("BookingReservationID")),
                             BookingDate = reader.IsDBNull(reader.GetOrdinal("BookingDate")) ? null : reader.GetDateTime(reader.GetOrdinal("BookingDate")),
                             TotalPrice = reader.IsDBNull(reader.GetOrdinal("TotalPrice")) ? (decimal?) null : reader.GetDecimal(reader.GetOrdinal("TotalPrice")),
-                            CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
+                            CustomerId = reader.GetInt32(reader.GetOrdinal("CustomerID")),
                             BookingStatus = reader.IsDBNull(reader.GetOrdinal("BookingStatus")) ? null : reader.GetByte(reader.GetOrdinal("BookingStatus"))
                         };
 
@@ -57,7 +57,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
                             BookingReservationID = reader.GetInt32(reader.GetOrdinal("BookingReservationID")),
                             BookingDate = reader.IsDBNull(reader.GetOrdinal("BookingDate")) ? null : reader.GetDateTime(reader.GetOrdinal("BookingDate")),
                             TotalPrice = reader.IsDBNull(reader.GetOrdinal("TotalPrice")) ? null : reader.GetDecimal(reader.GetOrdinal("TotalPrice")),
-                            CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
+                            CustomerId = reader.GetInt32(reader.GetOrdinal("CustomerID")),
                             BookingStatus = reader.IsDBNull(reader.GetOrdinal("BookingStatus")) ? null : reader.GetByte(reader.GetOrdinal("BookingStatus"))
                         };
                     }
@@ -77,7 +77,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
                 command.Parameters.AddWithValue("@BookingReservationID", bookingReservation.BookingReservationID);
                 command.Parameters.AddWithValue("@BookingDate", bookingReservation.BookingDate ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@TotalPrice", bookingReservation.TotalPrice ?? (object) DBNull.Value);
-                command.Parameters.AddWithValue("@CustomerID", bookingReservation.CustomerID);
+                command.Parameters.AddWithValue("@CustomerID", bookingReservation.CustomerId);
                 command.Parameters.AddWithValue("@BookingStatus", bookingReservation.BookingStatus ?? (object) DBNull.Value);
 
                 connection.Open();
@@ -94,7 +94,7 @@ public class BookingReservationRepository : IRepository<BookingReservation>{
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
                 command.Parameters.AddWithValue("@BookingDate", bookingReservation.BookingDate ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@TotalPrice", bookingReservation.TotalPrice ?? (object) DBNull.Value);
-                command.Parameters.AddWithValue("@CustomerID", bookingReservation.CustomerID);
+                command.Parameters.AddWithValue("@CustomerID", bookingReservation.CustomerId);
                 command.Parameters.AddWithValue("@BookingStatus", bookingReservation.BookingStatus ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@BookingReservationID", bookingReservation.BookingReservationID);
 

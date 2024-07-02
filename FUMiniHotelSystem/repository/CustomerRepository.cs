@@ -24,7 +24,7 @@ public class CustomerRepository : IRepository<Customer> {
                 using (OdbcDataReader reader = command.ExecuteReader()) {
                     while (reader.Read()) {
                         Customer customer = new Customer {
-                            CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
+                            CustomerId = reader.GetInt32(reader.GetOrdinal("CustomerID")),
                             CustomerFullName = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
                             Telephone = reader.IsDBNull(reader.GetOrdinal("Telephone")) ? null : reader.GetString(reader.GetOrdinal("Telephone")),
                             EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress")),
@@ -56,7 +56,7 @@ public class CustomerRepository : IRepository<Customer> {
                 using (OdbcDataReader reader = command.ExecuteReader()) {
                     if (reader.Read()) {
                         customer = new Customer {
-                            CustomerID = reader.GetInt32(reader.GetOrdinal("CustomerID")),
+                            CustomerId = reader.GetInt32(reader.GetOrdinal("CustomerID")),
                             CustomerFullName = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
                             Telephone = reader.IsDBNull(reader.GetOrdinal("Telephone")) ? null : reader.GetString(reader.GetOrdinal("Telephone")),
                             EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress")),
@@ -103,7 +103,7 @@ public class CustomerRepository : IRepository<Customer> {
                 command.Parameters.AddWithValue("@CustomerBirthday", customer.CustomerBirthday ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@CustomerStatus", customer.CustomerStatus ?? (object) DBNull.Value);
                 command.Parameters.AddWithValue("@Password", customer.Password ?? (object) DBNull.Value);
-                command.Parameters.AddWithValue("@CustomerID", customer.CustomerID);
+                command.Parameters.AddWithValue("@CustomerID", customer.CustomerId);
 
                 connection.Open();
                 command.ExecuteNonQuery();

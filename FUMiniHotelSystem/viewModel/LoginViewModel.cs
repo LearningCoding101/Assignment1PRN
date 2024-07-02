@@ -188,7 +188,7 @@ namespace FUMiniHotelSystem.viewModel
                 Telephone = Telephone,
                 EmailAddress = EmailAddress,
                 CustomerBirthday = CustomerBirthday,
-                CustomerStatus = true,
+                CustomerStatus = 1,
                 Password = Password,
             };
 

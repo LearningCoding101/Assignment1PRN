@@ -20,4 +20,9 @@
     <PackageReference Include="System.Data.Odbc" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="viewModel\admin\" />
+    <Folder Include="viewModel\customer\" />
+  </ItemGroup>
+
 </Project>

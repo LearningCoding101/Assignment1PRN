@@ -35,7 +35,7 @@ namespace FUMiniHotelSystem.repository
                                 Telephone = reader.GetString(2),
                                 EmailAddress = reader.GetString(3),
                                 CustomerBirthday = reader.GetDateTime(4),
-                                CustomerStatus = reader.GetBoolean(5),
+                                CustomerStatus = reader.GetByte(5),
                                 Password = reader.GetString(6)
                             };
                         }
@@ -66,7 +66,7 @@ namespace FUMiniHotelSystem.repository
                             Telephone = reader.GetString(2),
                             EmailAddress = reader.GetString(3),
                             CustomerBirthday = reader.GetDateTime(4),
-                            CustomerStatus = reader.GetBoolean(5),
+                            CustomerStatus = reader.GetByte(5),
                             Password = reader.GetString(6)
                         });
                     }

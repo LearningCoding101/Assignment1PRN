@@ -14,7 +14,7 @@ namespace FUMiniHotelSystem.utility
         {
             return new CustomerDTO
             {
-                CustomerID = customer.CustomerID,
+                CustomerId = customer.CustomerId,
                 CustomerFullName = customer.CustomerFullName,
                 Telephone = customer.Telephone,
                 EmailAddress = customer.EmailAddress,
@@ -27,7 +27,7 @@ namespace FUMiniHotelSystem.utility
         {
             return new Customer
             {
-                CustomerID = customer.CustomerID,
+                CustomerId = customer.CustomerId,
                 CustomerFullName = customer.CustomerFullName,
                 Telephone = customer.Telephone,
                 EmailAddress = customer.EmailAddress,

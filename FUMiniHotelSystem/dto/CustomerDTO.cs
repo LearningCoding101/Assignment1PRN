@@ -9,7 +9,7 @@ namespace FUMiniHotelSystem.dto
 {
     public class CustomerDTO
     {
-        public int CustomerID { get; set; }
+        public int CustomerId { get; set; }
         public string CustomerFullName { get; set; }
         public string Telephone { get; set; }
         public string EmailAddress { get; set; }
