@@ -9,6 +9,13 @@
       Title="viewRoom">
 
     <Grid>
-        <TextBlock Text="Welcome to the Home Page" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <DataGrid x:Name="RoomDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Room ID" Binding="{Binding RoomID}" />
+                <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" />
+                <DataGridTextColumn Header="Description" Binding="{Binding RoomDetailDescription}" />
+                <DataGridTextColumn Header="Room Type" Binding="{Binding RoomType.TypeName}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
