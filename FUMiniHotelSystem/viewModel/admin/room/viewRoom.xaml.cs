@@ -31,13 +31,13 @@ namespace FUMiniHotelSystem.viewModel.admin.room
             string connectionString = ConfigurationManager.AppSettings["MyDbConnectionString"];
             MessageBox.Show($"Connection String: {connectionString}", "Connection String Verification", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            _roomService = new RoomService(new RoomRepository(connectionString), new RoomTypeRepository(connectionString));
+            _roomService = new RoomService(new RoomRepository(connectionString), new RoomTypeRepository(connectionString), new BookingReservationRepository(connectionString), new BookingDetailRepository(connectionString));
             LoadRoomData();
         }
 
         private void LoadRoomData()
         {
-            List<RoomDTO> rooms = _roomService.GetAllRoom();
+            List<RoomDTO> rooms = _roomService.GetAllRooms();
             RoomDataGrid.ItemsSource = rooms;
         }
     }

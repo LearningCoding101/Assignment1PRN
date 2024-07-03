@@ -15,7 +15,7 @@ public class RoomRepository : IRepository<Room> {
     public List<Room> GetAll() {
         List<Room> rooms = new List<Room>();
 
-        string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay FROM Room";
+        string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay FROM RoomInformation";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
@@ -45,7 +45,7 @@ public class RoomRepository : IRepository<Room> {
         Room room = null;
 
         string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDate " +
-                       "FROM Room WHERE RoomID = ?";
+                       "FROM RoomInformation WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
@@ -72,7 +72,7 @@ public class RoomRepository : IRepository<Room> {
     }
 
     public void Add(Room room) {
-        string query = "INSERT INTO Room (RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay) " +
+        string query = "INSERT INTO RoomInformation (RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay) " +
                        "VALUES (?, ?, ?, ?, ?, ?)";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
@@ -91,7 +91,7 @@ public class RoomRepository : IRepository<Room> {
     }
 
     public void Update(Room room) {
-        string query = "UPDATE Room SET RoomNumber = ?, RoomDetailDescription = ?, RoomMaxCapacity = ?, " +
+        string query = "UPDATE RoomInformation SET RoomNumber = ?, RoomDetailDescription = ?, RoomMaxCapacity = ?, " +
                        "RoomTypeID = ?, RoomStatus = ?, RoomPricePerDay = ?  WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
@@ -111,7 +111,7 @@ public class RoomRepository : IRepository<Room> {
     }
 
     public void Delete(int roomId) {
-        string query = "DELETE FROM Room WHERE RoomID = ?";
+        string query = "DELETE FROM RoomInformation WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
             using (OdbcCommand command = new OdbcCommand(query, connection)) {
