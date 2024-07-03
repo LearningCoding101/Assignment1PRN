@@ -3,9 +3,6 @@ using FUMiniHotelSystem.model;
 using FUMiniHotelSystem.utility;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FUMiniHotelSystem.service
 {
@@ -13,28 +10,31 @@ namespace FUMiniHotelSystem.service
     {
         private readonly RoomRepository _roomRepository;
         private readonly RoomTypeRepository _roomTypeRepository;
+        private readonly BookingReservationRepository _bookingReservationRepository;
+        private readonly BookingDetailRepository _bookingDetailRepository;
 
-        public RoomService(RoomRepository roomRepository, RoomTypeRepository roomTypeRepository)
+        public RoomService(RoomRepository roomRepository, RoomTypeRepository roomTypeRepository,
+                           BookingReservationRepository bookingReservationRepository,
+                           BookingDetailRepository bookingDetailRepository)
         {
             _roomRepository = roomRepository;
             _roomTypeRepository = roomTypeRepository;
+            _bookingReservationRepository = bookingReservationRepository;
+            _bookingDetailRepository = bookingDetailRepository;
         }
 
-        public List<RoomDTO> GetAllRoom()
+        public List<RoomDTO> GetAllRooms()
         {
-            List<Room> room = _roomRepository.GetAll();
+            List<Room> rooms = _roomRepository.GetAll();
             List<RoomDTO> result = new List<RoomDTO>();
-            for(int i = 0; i < room.Count; i++)
+            foreach (var room in rooms)
             {
-                RoomType roomType = _roomTypeRepository.GetById(room[i].RoomTypeID);
-                result.Add(RoomMapper.MapRoomToRoomDTO(room[i],
-                    roomType)
-                    );
+                RoomType roomType = _roomTypeRepository.GetById(room.RoomTypeID);
+                result.Add(RoomMapper.MapRoomToRoomDTO(room, roomType));
             }
-
             return result;
         }
-       
+
         public RoomDTO GetRoomById(int id)
         {
             Room room = _roomRepository.GetById(id);
@@ -45,9 +45,7 @@ namespace FUMiniHotelSystem.service
         public void UpdateRoom(RoomDTO room)
         {
             _roomRepository.Update(RoomMapper.MapRoomDTOToRoom(room));
-            _roomTypeRepository.Update(RoomMapper
-                .MapRoomTypeDTOToRoomType(room.RoomType)
-                );
+            _roomTypeRepository.Update(RoomMapper.MapRoomTypeDTOToRoomType(room.RoomType));
         }
 
         public void DeleteRoom(int id)
@@ -55,7 +53,7 @@ namespace FUMiniHotelSystem.service
             _roomRepository.Delete(id);
         }
 
-        public List<RoomDTO> SearchRoom(string keyword)
+        public List<RoomDTO> SearchRooms(string keyword)
         {
             List<Room> rooms = _roomRepository.GetAll();
             List<RoomDTO> result = new List<RoomDTO>();
@@ -73,6 +71,72 @@ namespace FUMiniHotelSystem.service
             }
 
             return result;
+        }
+
+
+        public void BookRoom(int roomId, DateTime startDate, DateTime endDate, decimal actualPrice, int customerId)
+        {
+            // Create booking reservation
+            var bookingReservation = new BookingReservation
+            {
+                BookingDate = DateTime.Now, 
+                TotalPrice = actualPrice,   
+                CustomerId = customerId,
+                BookingStatus = 1           
+            };
+
+            _bookingReservationRepository.Add(bookingReservation);
+
+            // Create booking detail
+            var bookingDetail = new BookingDetail
+            {
+                BookingReservationID = bookingReservation.BookingReservationID,
+                RoomID = roomId,
+                StartDate = startDate,
+                EndDate = endDate,
+                ActualPrice = actualPrice
+            };
+
+            _bookingDetailRepository.Add(bookingDetail);
+        }
+
+        public void UpdateBooking(int bookingReservationId, DateTime startDate, DateTime endDate, decimal actualPrice)
+        {
+            var existingReservation = _bookingReservationRepository.GetById(bookingReservationId);
+            if (existingReservation == null)
+            {
+                throw new InvalidOperationException("Booking reservation not found.");
+            }
+
+            var bookingDetail = _bookingDetailRepository.GetById(bookingReservationId);
+            if (bookingDetail == null)
+            {
+                throw new InvalidOperationException("Booking detail not found.");
+            }
+
+            bookingDetail.StartDate = startDate;
+            bookingDetail.EndDate = endDate;
+            bookingDetail.ActualPrice = actualPrice;
+
+            _bookingDetailRepository.Update(bookingDetail);
+        }
+
+        public void CancelBooking(int bookingReservationId)
+        {
+
+            _bookingDetailRepository.Delete(bookingReservationId);
+
+            _bookingReservationRepository.Delete(bookingReservationId);
+        }
+
+        public BookingReservation GetBookingById(int bookingReservationId)
+        {
+            return _bookingReservationRepository.GetById(bookingReservationId);
+        }
+
+        public List<BookingReservation> GetAllBookings()
+        {
+            return _bookingReservationRepository.GetAll();
         }
     }
 }
