@@ -31,7 +31,7 @@ namespace FUMiniHotelSystem.viewModel.admin.room
             string connectionString = ConfigurationManager.AppSettings["MyDbConnectionString"];
             MessageBox.Show($"Connection String: {connectionString}", "Connection String Verification", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            _roomService = new RoomService(new RoomRepository(connectionString), new RoomTypeRepository(connectionString), new BookingReservationRepository(connectionString), new BookingDetailRepository(connectionString));
+            _roomService = new RoomService(new RoomRepository(connectionString), new RoomTypeRepository(connectionString));
             LoadRoomData();
         }
 
