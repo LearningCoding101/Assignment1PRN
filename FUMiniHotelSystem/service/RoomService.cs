@@ -48,7 +48,11 @@ namespace FUMiniHotelSystem.service
         {
             _roomRepository.Delete(id);
         }
-
+        public void AddRoom(RoomDTO room)
+        {
+            var newRoom = RoomMapper.MapRoomDTOToRoom(room);
+            _roomRepository.Add(newRoom);
+        }
         public List<RoomDTO> SearchRooms(string keyword)
         {
             List<Room> rooms = _roomRepository.GetAll();
@@ -68,8 +72,19 @@ namespace FUMiniHotelSystem.service
 
             return result;
         }
+        public List<RoomTypeDTO> GetAllRoomTypes()
+        {
+            List<RoomType> roomTypes = _roomTypeRepository.GetAll();
+            List<RoomTypeDTO> result = new List<RoomTypeDTO>();
+
+            foreach (var roomType in roomTypes)
+            {
+                result.Add(RoomMapper.MapRoomTypeToRoomTypeDTO(roomType));
+            }
+
+            return result;
+        }
 
 
-        
     }
 }

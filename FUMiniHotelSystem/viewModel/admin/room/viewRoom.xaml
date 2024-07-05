@@ -9,12 +9,32 @@
       Title="viewRoom">
 
     <Grid>
-        <DataGrid x:Name="RoomDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Add Room" Width="150" Height="30" Click="AddRoom_Click" Margin="10" HorizontalAlignment="Left" />
+        <StackPanel Orientation="Horizontal" Margin="199,5,303,5">
+            <TextBox x:Name="SearchTextBox" Width="200" Height="24" />
+            <Button Content="Search" Width="75" Margin="10,0,0,0" Click="SearchButton_Click" Height="26" />
+        </StackPanel>
+        <DataGrid x:Name="RoomDataGrid" AutoGenerateColumns="False" Margin="10" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Room ID" Binding="{Binding RoomID}" />
                 <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" />
                 <DataGridTextColumn Header="Description" Binding="{Binding RoomDetailDescription}" />
-                <DataGridTextColumn Header="Room Type" Binding="{Binding RoomType.TypeName}" />
+                <DataGridTextColumn Header="Room Type" Binding="{Binding RoomType.RoomTypeName}" />
+                <DataGridTemplateColumn Header="Actions">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Update" Margin="5,0" Click="UpdateRoom_Click" Tag="{Binding RoomID}" />
+                                <Button Content="Delete" Margin="5,0" Click="DeleteRoom_Click" Tag="{Binding RoomID}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

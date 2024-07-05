@@ -82,7 +82,7 @@ public class RoomTypeRepository : IRepository<RoomType>{
     }
 
     public void Update(RoomType roomType) {
-        string query = "UPDATE RoomType SET RoomTypeName = ?, TypeDescription = ?, TypeNote = ? " +
+        string query = "Update RoomType SET RoomTypeName = ?, TypeDescription = ?, TypeNote = ? " +
                        "WHERE RoomTypeID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

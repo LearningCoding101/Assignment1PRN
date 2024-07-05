@@ -44,7 +44,7 @@ public class RoomRepository : IRepository<Room> {
     public Room GetById(int roomId) {
         Room room = null;
 
-        string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDate " +
+        string query = "SELECT RoomID, RoomNumber, RoomDetailDescription, RoomMaxCapacity, RoomTypeID, RoomStatus, RoomPricePerDay " +
                        "FROM RoomInformation WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {
@@ -91,7 +91,7 @@ public class RoomRepository : IRepository<Room> {
     }
 
     public void Update(Room room) {
-        string query = "UPDATE RoomInformation SET RoomNumber = ?, RoomDetailDescription = ?, RoomMaxCapacity = ?, " +
+        string query = "Update RoomInformation SET RoomNumber = ?, RoomDetailDescription = ?, RoomMaxCapacity = ?, " +
                        "RoomTypeID = ?, RoomStatus = ?, RoomPricePerDay = ?  WHERE RoomID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

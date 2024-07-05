@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\App.xaml
-2-800638410
+7-442633511
 
-34-1175884203
+40-1503107728
 261-1479332925
-MainWindow.xaml;viewModel\admin\room\viewRoom.xaml;
+MainWindow.xaml;viewModel\admin\booking\ManageBooking.xaml;viewModel\admin\booking\UpdateBooking.xaml;viewModel\admin\booking\ViewBookingDetail.xaml;viewModel\admin\dashboard.xaml;viewModel\admin\room\AddRoomDialog.xaml;viewModel\admin\room\viewRoom.xaml;
 
-False
+True
 

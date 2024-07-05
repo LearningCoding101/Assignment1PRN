@@ -1,4 +1,5 @@
-﻿using FUMiniHotelSystem.viewModel.admin.room;
+﻿using FUMiniHotelSystem.viewModel.admin;
+using FUMiniHotelSystem.viewModel.admin.room;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -24,7 +25,7 @@ namespace FUMiniHotelSystem
 
         private void NavigateTest(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new viewRoom());
+            MainFrame.NavigationService.Navigate(new dashboard());
 
         }
     }

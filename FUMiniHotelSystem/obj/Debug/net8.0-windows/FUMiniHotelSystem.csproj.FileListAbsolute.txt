@@ -111,3 +111,13 @@ D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\bin\Debug\net8.
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
 D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\dashboard.g.cs
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\dashboard.baml
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\room\AddRoomDialog.g.cs
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\room\AddRoomDialog.baml
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\booking\ManageBooking.g.cs
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\booking\ManageBooking.baml
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\booking\UpdateBooking.g.cs
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\booking\UpdateBooking.baml
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\booking\ViewBookingDetail.g.cs
+D:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\obj\Debug\net8.0-windows\viewModel\admin\booking\ViewBookingDetail.baml

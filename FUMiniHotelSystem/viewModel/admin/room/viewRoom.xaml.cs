@@ -2,19 +2,9 @@
 using FUMiniHotelSystem.service;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Configuration;
 
 namespace FUMiniHotelSystem.viewModel.admin.room
 {
@@ -29,7 +19,6 @@ namespace FUMiniHotelSystem.viewModel.admin.room
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.AppSettings["MyDbConnectionString"];
-            MessageBox.Show($"Connection String: {connectionString}", "Connection String Verification", MessageBoxButton.OK, MessageBoxImage.Information);
 
             _roomService = new RoomService(new RoomRepository(connectionString), new RoomTypeRepository(connectionString));
             LoadRoomData();
@@ -39,6 +28,44 @@ namespace FUMiniHotelSystem.viewModel.admin.room
         {
             List<RoomDTO> rooms = _roomService.GetAllRooms();
             RoomDataGrid.ItemsSource = rooms;
+        }
+
+        private void AddRoom_Click(object sender, RoutedEventArgs e)
+        {
+            var addRoomDialog = new AddRoomDialog(_roomService);
+            if (addRoomDialog.ShowDialog() == true)
+            {
+                LoadRoomData(); 
+            }
+        }
+
+        private void UpdateRoom_Click(object sender, RoutedEventArgs e)
+        {
+            int roomId = (int)((Button)sender).Tag;
+            var UpdateRoomDialog = new AddRoomDialog(_roomService, roomId);
+            if (UpdateRoomDialog.ShowDialog() == true)
+            {
+                LoadRoomData(); 
+            }
+        }
+
+        private void DeleteRoom_Click(object sender, RoutedEventArgs e)
+        {
+            int roomId = (int)((Button)sender).Tag;
+
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to delete this room?", "Confirmation", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                _roomService.DeleteRoom(roomId);
+                LoadRoomData(); 
+            }
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            string keyword = SearchTextBox.Text;
+            var filteredRooms = _roomService.SearchRooms(keyword);
+            RoomDataGrid.ItemsSource = filteredRooms;
         }
     }
 }

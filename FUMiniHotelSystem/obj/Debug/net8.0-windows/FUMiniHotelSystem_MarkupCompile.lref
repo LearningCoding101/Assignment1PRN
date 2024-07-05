@@ -1,5 +1,10 @@
 ﻿
 
 FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\MainWindow.xaml;;
+FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\viewModel\admin\dashboard.xaml;;
+FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\viewModel\admin\room\AddRoomDialog.xaml;;
 FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\viewModel\admin\room\viewRoom.xaml;;
+FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\viewModel\admin\booking\ManageBooking.xaml;;
+FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\viewModel\admin\booking\UpdateBooking.xaml;;
+FD:\workingPRN\FUMiniHotelSystem\Assignment1PRN\FUMiniHotelSystem\viewModel\admin\booking\ViewBookingDetail.xaml;;
 

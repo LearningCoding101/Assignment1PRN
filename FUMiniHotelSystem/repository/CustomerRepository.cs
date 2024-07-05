@@ -28,7 +28,7 @@ public class CustomerRepository : IRepository<Customer> {
                             CustomerFullName = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
                             Telephone = reader.IsDBNull(reader.GetOrdinal("Telephone")) ? null : reader.GetString(reader.GetOrdinal("Telephone")),
                             EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress")),
-                            CustomerBirthday = reader.IsDBNull(reader.GetOrdinal("CustomerBirthday")) ? null : reader.GetDateTime(reader.GetOrdinal("CustomerBirthday")),
+                            CustomerBirthday = reader.GetDateTime(reader.GetOrdinal("CustomerBirthday")),
                             CustomerStatus = reader.IsDBNull(reader.GetOrdinal("CustomerStatus")) ? null : reader.GetByte(reader.GetOrdinal("CustomerStatus")),
                             Password = reader.IsDBNull(reader.GetOrdinal("Password")) ? null : reader.GetString(reader.GetOrdinal("Password"))
                         };
@@ -60,7 +60,7 @@ public class CustomerRepository : IRepository<Customer> {
                             CustomerFullName = reader.IsDBNull(reader.GetOrdinal("CustomerFullname")) ? null : reader.GetString(reader.GetOrdinal("CustomerFullname")),
                             Telephone = reader.IsDBNull(reader.GetOrdinal("Telephone")) ? null : reader.GetString(reader.GetOrdinal("Telephone")),
                             EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress")),
-                            CustomerBirthday = reader.IsDBNull(reader.GetOrdinal("CustomerBirthday")) ? null : reader.GetDateTime(reader.GetOrdinal("CustomerBirthday")),
+                            CustomerBirthday = reader.GetDateTime(reader.GetOrdinal("CustomerBirthday")),
                             CustomerStatus = reader.IsDBNull(reader.GetOrdinal("CustomerStatus")) ? null : reader.GetByte(reader.GetOrdinal("CustomerStatus")),
                             Password = reader.IsDBNull(reader.GetOrdinal("Password")) ? null : reader.GetString(reader.GetOrdinal("Password"))
                         };
@@ -92,7 +92,7 @@ public class CustomerRepository : IRepository<Customer> {
     }
 
     public void Update(Customer customer) {
-        string query = "UPDATE Customer SET CustomerFullname = ?, Telephone = ?, EmailAddress = ?, " +
+        string query = "Update Customer SET CustomerFullname = ?, Telephone = ?, EmailAddress = ?, " +
                        "CustomerBirthday = ?, CustomerStatus = ?, Password = ? WHERE CustomerID = ?";
 
         using (OdbcConnection connection = new OdbcConnection(_connectionString)) {

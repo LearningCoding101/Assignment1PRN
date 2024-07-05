@@ -7,12 +7,42 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="viewModel\admin\booking\ManageBooking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\booking\UpdateBooking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\booking\ViewBookingDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\room\AddRoomDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="viewModel\admin\room\viewRoom.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\booking\ManageBooking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\booking\UpdateBooking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\booking\ViewBookingDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\room\AddRoomDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\room\viewRoom.xaml">

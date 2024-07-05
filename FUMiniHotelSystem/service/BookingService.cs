@@ -1,27 +1,30 @@
-﻿using FUMiniHotelSystem.model;
+﻿using FUMiniHotelSystem.dto;
+using FUMiniHotelSystem.model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace FUMiniHotelSystem.service
 {
-    internal class BookingService
+    public class BookingService
     {
         private readonly BookingReservationRepository _bookingReservationRepository;
         private readonly BookingDetailRepository _bookingDetailRepository;
+
         public BookingService(BookingReservationRepository bookingReservationRepository,
-                           BookingDetailRepository bookingDetailRepository)
+                              BookingDetailRepository bookingDetailRepository)
         {
             _bookingReservationRepository = bookingReservationRepository;
             _bookingDetailRepository = bookingDetailRepository;
         }
-        public void BookRoom(int roomId, DateTime startDate, DateTime endDate, decimal actualPrice, int customerId)
+
+        public void BookRoom(int roomId, DateTime StartDate, DateTime EndDate, decimal actualPrice, int customerId)
         {
+            int nextBookingReservationId = GetNextBookingReservationId();
             // Create booking reservation
             var bookingReservation = new BookingReservation
             {
+                BookingReservationID = nextBookingReservationId,
                 BookingDate = DateTime.Now,
                 TotalPrice = actualPrice,
                 CustomerId = customerId,
@@ -30,56 +33,140 @@ namespace FUMiniHotelSystem.service
 
             _bookingReservationRepository.Add(bookingReservation);
 
-            // Create booking detail
+           
             var bookingDetail = new BookingDetail
             {
-                BookingReservationID = bookingReservation.BookingReservationID,
+                BookingReservationID = nextBookingReservationId,
                 RoomID = roomId,
-                StartDate = startDate,
-                EndDate = endDate,
+                StartDate = StartDate,
+                EndDate = EndDate,
                 ActualPrice = actualPrice
             };
 
             _bookingDetailRepository.Add(bookingDetail);
         }
 
-        public void UpdateBooking(int bookingReservationId, DateTime startDate, DateTime endDate, decimal actualPrice)
+        public void UpdateBooking(BookingReservationDTO reservationDTO, BookingDetailDTO detailDTO)
         {
-            var existingReservation = _bookingReservationRepository.GetById(bookingReservationId);
-            if (existingReservation == null)
+            var reservationToUpdate = new BookingReservation
             {
-                throw new InvalidOperationException("Booking reservation not found.");
-            }
+                BookingReservationID = reservationDTO.BookingReservationID,
+                BookingDate = reservationDTO.BookingDate,
+                TotalPrice = reservationDTO.TotalPrice,
+                CustomerId = reservationDTO.CustomerId,
+                BookingStatus = reservationDTO.BookingStatus
+            };
 
-            var bookingDetail = _bookingDetailRepository.GetById(bookingReservationId);
-            if (bookingDetail == null)
+            _bookingReservationRepository.Update(reservationToUpdate);
+
+            var detailToUpdate = new BookingDetail
             {
-                throw new InvalidOperationException("Booking detail not found.");
-            }
+                BookingReservationID = detailDTO.BookingReservationID,
+                RoomID = detailDTO.RoomID,
+                StartDate = detailDTO.StartDate,
+                EndDate = detailDTO.EndDate,
+                ActualPrice = detailDTO.ActualPrice
+            };
 
-            bookingDetail.StartDate = startDate;
-            bookingDetail.EndDate = endDate;
-            bookingDetail.ActualPrice = actualPrice;
-
-            _bookingDetailRepository.Update(bookingDetail);
+            _bookingDetailRepository.Update(detailToUpdate);
         }
-
         public void CancelBooking(int bookingReservationId)
         {
-
-            _bookingDetailRepository.Delete(bookingReservationId);
+            var bookingDetails = _bookingDetailRepository.GetAll();
+            var detailToDelete = bookingDetails.Find(bd => bd.BookingReservationID == bookingReservationId);
+            if (detailToDelete != null)
+            {
+                _bookingDetailRepository.Delete(detailToDelete.BookingReservationID);
+            }
 
             _bookingReservationRepository.Delete(bookingReservationId);
         }
 
-        public BookingReservation GetBookingById(int bookingReservationId)
+        public List<BookingReservationDTO> GetAllBookings()
         {
-            return _bookingReservationRepository.GetById(bookingReservationId);
+            var bookingReservations = _bookingReservationRepository.GetAll();
+            var bookingReservationDTOs = MapToBookingReservationDTOs(bookingReservations);
+            return bookingReservationDTOs;
         }
 
-        public List<BookingReservation> GetAllBookings()
+        public List<BookingDetailDTO> GetAllBookingDetails()
         {
-            return _bookingReservationRepository.GetAll();
+            var bookingDetails = _bookingDetailRepository.GetAll();
+            var bookingDetailDTOs = MapToBookingDetailDTOs(bookingDetails);
+            return bookingDetailDTOs;
+        }
+        public BookingDetailDTO GetBookingDetail(int id)
+        {
+            var detail = _bookingDetailRepository.GetById(id);
+            var dto = new BookingDetailDTO
+            {
+                BookingReservationID = detail.BookingReservationID,
+                RoomID = detail.RoomID,
+                StartDate = detail.StartDate,
+                EndDate = detail.EndDate,
+                ActualPrice = detail.ActualPrice
+            };
+            return dto;
+        }
+        public BookingReservationDTO GetBookingById(int id)
+        {
+            var reservation = _bookingReservationRepository.GetById(id);
+            var dto = new BookingReservationDTO
+            {
+                BookingReservationID = reservation.BookingReservationID,
+                BookingDate = reservation.BookingDate,
+                TotalPrice = reservation.TotalPrice,
+                CustomerId = reservation.CustomerId,
+                BookingStatus = reservation.BookingStatus
+            };
+            return dto;
+        }
+        private List<BookingReservationDTO> MapToBookingReservationDTOs(List<BookingReservation> bookingReservations)
+        {
+            var bookingReservationDTOs = new List<BookingReservationDTO>();
+            foreach (var reservation in bookingReservations)
+            {
+                var dto = new BookingReservationDTO
+                {
+                    BookingReservationID = reservation.BookingReservationID,
+                    BookingDate = reservation.BookingDate,
+                    TotalPrice = reservation.TotalPrice,
+                    CustomerId = reservation.CustomerId,
+                    BookingStatus = reservation.BookingStatus
+                };
+                bookingReservationDTOs.Add(dto);
+            }
+            return bookingReservationDTOs;
+        }
+
+        private List<BookingDetailDTO> MapToBookingDetailDTOs(List<BookingDetail> bookingDetails)
+        {
+            var bookingDetailDTOs = new List<BookingDetailDTO>();
+            foreach (var detail in bookingDetails)
+            {
+                var dto = new BookingDetailDTO
+                {
+                    BookingReservationID = detail.BookingReservationID,
+                    RoomID = detail.RoomID,
+                    StartDate = detail.StartDate,
+                    EndDate = detail.EndDate,
+                    ActualPrice = detail.ActualPrice
+                };
+                bookingDetailDTOs.Add(dto);
+            }
+            return bookingDetailDTOs;
+        }
+        private int GetNextBookingReservationId()
+        {
+            var allReservations = _bookingReservationRepository.GetAll();
+            if (allReservations.Count == 0)
+            {
+                return 1;
+            }
+            int maxId = allReservations.Max(r => r.BookingReservationID);
+            return maxId + 1;
         }
     }
+   
+
 }

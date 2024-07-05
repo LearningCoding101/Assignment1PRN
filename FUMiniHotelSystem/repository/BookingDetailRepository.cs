@@ -33,8 +33,8 @@ public class BookingDetailRepository : IRepository<BookingDetail>
                         {
                             BookingReservationID = reader.GetInt32(reader.GetOrdinal("BookingReservationID")),
                             RoomID = reader.GetInt32(reader.GetOrdinal("RoomID")),
-                            StartDate = reader.IsDBNull(reader.GetOrdinal("StartDate")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("StartDate")),
-                            EndDate = reader.IsDBNull(reader.GetOrdinal("EndDate")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("EndDate")),
+                            StartDate = reader.GetDateTime(reader.GetOrdinal("StartDate")),
+                            EndDate = reader.GetDateTime(reader.GetOrdinal("EndDate")),
                             ActualPrice = reader.IsDBNull(reader.GetOrdinal("ActualPrice")) ? (decimal?)null : reader.GetDecimal(reader.GetOrdinal("ActualPrice"))
                         };
 
@@ -63,13 +63,14 @@ public class BookingDetailRepository : IRepository<BookingDetail>
                 using (var reader = command.ExecuteReader())
                 {
                     if (reader.Read())
+
                     {
                         bookingDetail = new BookingDetail
                         {
                             BookingReservationID = reader.GetInt32(reader.GetOrdinal("BookingReservationID")),
                             RoomID = reader.GetInt32(reader.GetOrdinal("RoomID")),
-                            StartDate = reader.IsDBNull(reader.GetOrdinal("StartDate")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("StartDate")),
-                            EndDate = reader.IsDBNull(reader.GetOrdinal("EndDate")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("EndDate")),
+                            StartDate = reader.GetDateTime(reader.GetOrdinal("StartDate")),
+                            EndDate = reader.GetDateTime(reader.GetOrdinal("EndDate")),
                             ActualPrice = reader.IsDBNull(reader.GetOrdinal("ActualPrice")) ? (decimal?)null : reader.GetDecimal(reader.GetOrdinal("ActualPrice"))
                         };
                     }
@@ -102,7 +103,7 @@ public class BookingDetailRepository : IRepository<BookingDetail>
 
     public void Update(BookingDetail bookingDetail)
     {
-        string query = "UPDATE BookingDetail SET StartDate = ?, EndDate = ?, ActualPrice = ? WHERE BookingReservationID = ? AND RoomID = ?";
+        string query = "Update BookingDetail SET StartDate = ?, EndDate = ?, ActualPrice = ? WHERE BookingReservationID = ? AND RoomID = ?";
 
         using (var connection = new OdbcConnection(_connectionString))
         {
@@ -120,15 +121,15 @@ public class BookingDetailRepository : IRepository<BookingDetail>
         }
     }
 
-    public void Delete(int id)
+    public void Delete(int bookingReservationId)
     {
-        string query = "DELETE FROM BookingDetail WHERE BookingReservationID = ?";
+        string query = "DELETE FROM BookingDetail WHERE BookingReservationID = ? ";
 
         using (var connection = new OdbcConnection(_connectionString))
         {
             using (var command = new OdbcCommand(query, connection))
             {
-                command.Parameters.AddWithValue("@BookingReservationID", id);
+                command.Parameters.AddWithValue("@BookingReservationID", bookingReservationId);
 
                 connection.Open();
                 command.ExecuteNonQuery();
