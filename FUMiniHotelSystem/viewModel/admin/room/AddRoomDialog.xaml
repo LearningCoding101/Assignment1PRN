@@ -5,22 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FUMiniHotelSystem.viewModel.admin.room"
         mc:Ignorable="d"
+        Background="#272537"
         Title="Add Room" Height="210" Width="450">
     <Grid>
         <StackPanel Margin="20">
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <Label Content="Room Number:" Width="120"/>
+            <StackPanel.Resources>
+                <Style x:Key="textBox" TargetType="Label">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Margin" Value="10 0"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Label">
+                                <Border  
+                                CornerRadius="5" 
+                                Padding="{TemplateBinding Padding}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Color="#ffc554" Offset="0"/>
+                                            <GradientStop Color="#ffb73a" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                </Border>
+                                
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+                <Style x:Key="submit" TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border  
+                                CornerRadius="2" 
+                                Padding="{TemplateBinding Padding}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Color="#5bc3ff" Offset="0"/>
+                                            <GradientStop Color="#3aa0ff" Offset="0.5"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                </Border>
+
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel   Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Style="{StaticResource textBox}" Content="Room Number:" Width="120"/>
                 <TextBox x:Name="RoomNumberTextBox" Width="300"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <Label Content="Room Description:" Width="120"/>
+                <Label Style="{StaticResource textBox}" Content="Room Description:" Width="120"/>
                 <TextBox x:Name="RoomDescriptionTextBox" Width="300"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <Label Content="Room Type:" Width="120"/>
+                <Label Style="{StaticResource textBox}" Content="Room Type:" Width="120"/>
                 <ComboBox x:Name="RoomTypeComboBox" DisplayMemberPath="RoomTypeName" />
             </StackPanel>
-            <Button Content="Save" Width="100" HorizontalAlignment="Right" Click="Save_Click"/>
+            <Button Style="{StaticResource submit}" Content="Save" Width="100" HorizontalAlignment="Right" Click="Save_Click"/>
         </StackPanel>
     </Grid>
 </Window>

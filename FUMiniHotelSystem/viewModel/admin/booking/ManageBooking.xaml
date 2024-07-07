@@ -8,35 +8,119 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ManageBooking">
 
+    <Page.Resources>
+        <!-- Style for Label with Gradient Background and Rounded Corners -->
+        <Style x:Key="GradientLabelStyle" TargetType="Label">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Margin" Value="10 0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Label">
+                        <Border CornerRadius="5" Padding="{TemplateBinding Padding}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#ffc554" Offset="0"/>
+                                    <GradientStop Color="#ffb73a" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for Button with Gradient Background and Rounded Corners -->
+        <Style x:Key="GradientButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="2" Padding="{TemplateBinding Padding}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#5bc3ff" Offset="0"/>
+                                    <GradientStop Color="#3aa0ff" Offset="0.5"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for DataGrid with Customized Body Colors and Background -->
+        <Style x:Key="GradientDataGridStyle" TargetType="DataGrid">
+            <Setter Property="Background" Value="#272537"/>
+            <!-- Set the background of the DataGrid -->
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#ffc554" Offset="0"/>
+                                    <GradientStop Color="#ffb73a" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="BorderBrush" Value="Gray"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="RowBackground" Value="#e8f4ff"/>
+            <!-- Light blue background for rows -->
+            <Setter Property="AlternatingRowBackground" Value="#cde7ff"/>
+            <!-- Slightly darker blue for alternating rows -->
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#DADADA"/>
+            <Setter Property="VerticalGridLinesBrush" Value="Transparent"/>
+        </Style>
+    </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="BookingsDataGrid" Grid.Row="1"
-                  AutoGenerateColumns="False"
-                  ItemsSource="{Binding Bookings}"
-                  SelectionMode="Single"
-                  SelectedItem="{Binding SelectedBooking}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingReservationID}" Width="100"/>
-                <DataGridTextColumn Header="Booking DateTime" Binding="{Binding BookingDate}" Width="150"/>
-                <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice}" Width="150"/>
-                <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerId}" Width="100"/>
-                <DataGridTextColumn Header="Booking Status" Binding="{Binding BookingStatus}" Width="100"/>
-                <DataGridTemplateColumn Header="Actions">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button Content="Update" Margin="5,0" Click="UpdateRoom_Click" Tag="{Binding BookingReservationID}" />
-                                <Button Content="Delete" Margin="5,0" Click="DeleteRoom_Click" Tag="{Binding BookingReservationID}" />
-                                <Button Content="ViewDetail" Margin="5,0" Click="ViewDetail_Click" Tag="{Binding BookingReservationID}" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-        <Button Content="Add booking" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="67" Click="Button_Click"/>
+
+        <!-- Header row with background color -->
+        <Border Grid.Row="0" Background="#5bc3ff">
+            <Button Content="Add booking" HorizontalAlignment="Left" VerticalAlignment="Center" Width="92" Click="Button_Click" Margin="10,0,0,0" Style="{StaticResource GradientButtonStyle}" Height="33"/>
+        </Border>
+
+        <!-- DataGrid row with background color -->
+        <Border Grid.Row="1" Background="#272537">
+            <DataGrid x:Name="BookingsDataGrid" 
+                      AutoGenerateColumns="False"
+                      ItemsSource="{Binding Bookings}"
+                      SelectionMode="Single"
+                      SelectedItem="{Binding SelectedBooking}"
+                      Style="{StaticResource GradientDataGridStyle}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingReservationID}" Width="*"/>
+                    <DataGridTextColumn Header="Booking DateTime" Binding="{Binding BookingDate}" Width="*"/>
+                    <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice}" Width="*"/>
+                    <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerId}" Width="*"/>
+                    <DataGridTextColumn Header="Booking Status" Binding="{Binding BookingStatus}" Width="*"/>
+                    <DataGridTemplateColumn Width="*" Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Button Content="Update" Margin="5,0" Click="UpdateRoom_Click" Tag="{Binding BookingReservationID}" Style="{StaticResource GradientButtonStyle}"/>
+                                    <Button Content="Delete" Margin="5,0" Click="DeleteRoom_Click" Tag="{Binding BookingReservationID}" Style="{StaticResource GradientButtonStyle}"/>
+                                    <Button Content="ViewDetail" Margin="5,0" Click="ViewDetail_Click" Tag="{Binding BookingReservationID}" Style="{StaticResource GradientButtonStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
 </Page>
