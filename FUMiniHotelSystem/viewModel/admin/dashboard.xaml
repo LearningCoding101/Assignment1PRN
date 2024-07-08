@@ -5,44 +5,63 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FUMiniHotelSystem.viewModel.admin"
       mc:Ignorable="d"
-      Background="White"
+      Background="#272537"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="dashboard">
+
+    <Page.Resources>
+        <Style x:Key="StackPanelGradientStyle" TargetType="StackPanel">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#5bc3ff" Offset="0"/>
+                        <GradientStop Color="#3aa0ff" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="1" 
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#ffc554" Offset="0"/>
+                        <GradientStop Color="#ffb73a" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="10,10,10,0"/>
+        </Style>
+    </Page.Resources>
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
-            <!-- Sidebar width -->
             <ColumnDefinition Width="*"/>
-            <!-- Content area width -->
         </Grid.ColumnDefinitions>
-
-        <!-- Sidebar Navigation -->
-        <StackPanel Orientation="Vertical" Grid.Column="0" Background="LightGray">
-            <StackPanel.Resources>
-                <!-- Define RoundedButtonStyle -->
-                <Style x:Key="RoundedButtonStyle" TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border Background="{TemplateBinding Background}" 
-                                        BorderBrush="{TemplateBinding BorderBrush}" 
-                                        BorderThickness="1" 
-                                        CornerRadius="10">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="Background" Value="LightGray"/>
-                    <Setter Property="BorderBrush" Value="Gray"/>
-                    <Setter Property="Foreground" Value="Black"/>
-                    <Setter Property="Padding" Value="10,5"/>
-                    <Setter Property="Height" Value="45"/>
-                    <Setter Property="Width" Value="150"/>
-                    <Setter Property="Margin" Value="10,10,10,0"/>
-                </Style>
-            </StackPanel.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Orientation="Vertical" Grid.Column="0" Style="{StaticResource StackPanelGradientStyle}">
             <Button x:Name="btnManageCustomers" Content="Manage Customers" Click="NavigateToManageCustomers" Style="{StaticResource RoundedButtonStyle}"/>
             <Button x:Name="btnManageRooms" Content="Manage Rooms" Click="NavigateToManageRooms" Style="{StaticResource RoundedButtonStyle}"/>
             <Button x:Name="btnManageBookings" Content="Manage Bookings" Click="NavigateToManageBookings" Style="{StaticResource RoundedButtonStyle}"/>
@@ -50,6 +69,6 @@
         </StackPanel>
 
         <!-- Content Area -->
-        <Frame x:Name="ContentFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="ContentFrame" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Page>

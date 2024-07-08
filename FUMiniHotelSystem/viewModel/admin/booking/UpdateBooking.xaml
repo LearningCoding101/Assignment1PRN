@@ -5,34 +5,109 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FUMiniHotelSystem.viewModel.admin.booking"
         mc:Ignorable="d"
-        Title="UpdateBooking" Height="515" Width="800">
+        Background="#272537"
+        Title="UpdateBooking" Height="240" Width="800">
+    <Window.Resources>
+        <Style x:Key="textBox" TargetType="Label">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Margin" Value="10 0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Label">
+                        <Border  
+                        CornerRadius="5" 
+                        Padding="{TemplateBinding Padding}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#ffc554" Offset="0"/>
+                                    <GradientStop Color="#ffb73a" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="submit" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border  
+                        CornerRadius="2" 
+                        Padding="{TemplateBinding Padding}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#5bc3ff" Offset="0"/>
+                                    <GradientStop Color="#3aa0ff" Offset="0.5"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        <StackPanel Margin="20">
-            <Label Content="Booking ID:"/>
-            <TextBox x:Name="BookingIdTextBox" Width="300" IsReadOnly="True"/>
-            <Label Content="Booking Date:"/>
-            <DatePicker x:Name="BookingDatePicker" Width="300"/>
-            <Label Content="Total Price:"/>
-            <TextBox x:Name="TotalPriceTextBox" Width="300"/>
-            <Label Content="Customer:"/>
-            <ComboBox x:Name="CustomerComboBox" Width="300"
-                      DisplayMemberPath="CustomerFullName"
-                      SelectedValuePath="CustomerId"
-                      ItemsSource="{Binding CustomerList}"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-            <Label Content="Room:"/>
-            <ComboBox x:Name="RoomComboBox" Width="300"
-                      DisplayMemberPath="RoomDetailDescription"
-                      SelectedValuePath="RoomID"
-                      ItemsSource="{Binding RoomList}"/>
-            <Label Content="Start Date Time:" Margin="0,20,0,0"/>
-            <DatePicker x:Name="StartDatePicker" Width="300"/>
-            <Label Content="End Date Time:"/>
-            <DatePicker x:Name="EndDatePicker" Width="300"/>
-            <Label Content="Actual Price:"/>
-            <TextBox x:Name="ActualPriceTextBox" Width="300"/>
+        <StackPanel Grid.Column="0" Margin="20" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Booking ID:" Style="{StaticResource textBox}" Width="83" />
+                <TextBox x:Name="BookingIdTextBox" Style="{StaticResource textBoxStyle}" IsReadOnly="True" Width="300" />
+            </StackPanel>
 
-            <Button Content="Update" Width="100" HorizontalAlignment="Right" Click="Update_Click"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Booking Date:" Style="{StaticResource textBox}" />
+                <DatePicker x:Name="BookingDatePicker" Style="{StaticResource datePickerStyle}" Width="300" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Total Price:" Style="{StaticResource textBox}" Width="82" />
+                <TextBox x:Name="TotalPriceTextBox" Style="{StaticResource textBoxStyle}" Width="300" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Customer:" Style="{StaticResource textBox}" Width="86" />
+                <ComboBox x:Name="CustomerComboBox" Style="{StaticResource comboBoxStyle}"
+                          DisplayMemberPath="CustomerFullName" SelectedValuePath="CustomerId"
+                          ItemsSource="{Binding CustomerList}" Width="300" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="20" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Room:" Style="{StaticResource textBox}" Width="93" />
+                <ComboBox x:Name="RoomComboBox" Style="{StaticResource comboBoxStyle}"
+                          DisplayMemberPath="RoomDetailDescription" SelectedValuePath="RoomID"
+                          ItemsSource="{Binding RoomList}" Width="300" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Start Date Time:" Style="{StaticResource textBox}" />
+                <DatePicker x:Name="StartDatePicker" Style="{StaticResource datePickerStyle}" Width="300" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="End Date Time:" Style="{StaticResource textBox}" Width="92" />
+                <DatePicker x:Name="EndDatePicker" Style="{StaticResource datePickerStyle}" Width="300" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Content="Actual Price:" Style="{StaticResource textBox}" Width="95" />
+                <TextBox x:Name="ActualPriceTextBox" Style="{StaticResource textBoxStyle}" Width="300" />
+            </StackPanel>
+
+            <Button Content="Update" Style="{StaticResource submit}" Click="Update_Click" Width="100" HorizontalAlignment="Right" />
         </StackPanel>
     </Grid>
 </Window>
