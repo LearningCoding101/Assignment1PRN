@@ -1,4 +1,4 @@
-﻿<Window x:Class="FUMiniHotelSystem.viewModel.admin.Customer.UpdateCustomer"
+﻿<Window x:Class="FUMiniHotelSystem.viewModel.admin.customer.UpdateCustomer"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Update Customer" Height="400" Width="400">

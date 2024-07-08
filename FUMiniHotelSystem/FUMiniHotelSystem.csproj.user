@@ -16,22 +16,22 @@
     <Compile Update="viewModel\admin\booking\ViewBookingDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\Customer\CustomerAddDialog.xaml.cs">
+    <Compile Update="viewModel\admin\customer\CustomerAddDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\Customer\CustomerDashboard.xaml.cs">
+    <Compile Update="viewModel\admin\customer\CustomerDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\Customer\CustomerProfile.xaml.cs">
+    <Compile Update="viewModel\admin\customer\CustomerProfile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\Customer\CustomerUpdateDialog.xaml.cs">
+    <Compile Update="viewModel\admin\customer\CustomerUpdateDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\Customer\ManageCustomer.xaml.cs">
+    <Compile Update="viewModel\admin\customer\ManageCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\Customer\UpdateCustomer.xaml.cs">
+    <Compile Update="viewModel\admin\customer\UpdateCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="viewModel\admin\dashboard.xaml.cs">
@@ -63,22 +63,22 @@
     <Page Update="viewModel\admin\booking\ViewBookingDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\Customer\CustomerAddDialog.xaml">
+    <Page Update="viewModel\admin\customer\CustomerAddDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\Customer\CustomerDashboard.xaml">
+    <Page Update="viewModel\admin\customer\CustomerDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\Customer\CustomerProfile.xaml">
+    <Page Update="viewModel\admin\customer\CustomerProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\Customer\CustomerUpdateDialog.xaml">
+    <Page Update="viewModel\admin\customer\CustomerUpdateDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\Customer\ManageCustomer.xaml">
+    <Page Update="viewModel\admin\customer\ManageCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\Customer\UpdateCustomer.xaml">
+    <Page Update="viewModel\admin\customer\UpdateCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\dashboard.xaml">

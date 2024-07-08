@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FUMiniHotelSystem.viewModel.admin.Customer {
+namespace FUMiniHotelSystem.viewModel.admin.customer {
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>

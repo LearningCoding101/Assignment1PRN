@@ -9,7 +9,7 @@ public class RoomRepository : IRepository<Room> {
     private readonly string _connectionString;
 
     public RoomRepository(string connectionString) {
-        _connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+        _connectionString = connectionString;
     }
 
     public List<Room> GetAll() {

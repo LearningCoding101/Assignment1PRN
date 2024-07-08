@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace FUMiniHotelSystem.viewModel.admin.Customer {
+namespace FUMiniHotelSystem.viewModel.admin.customer {
     public partial class UpdateCustomer: Window, INotifyPropertyChanged {
         private readonly CustomerService _customerService;
         private readonly int? _customerId;

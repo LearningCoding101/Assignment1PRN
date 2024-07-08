@@ -1,7 +1,7 @@
-﻿<Window x:Class="FUMiniHotelSystem.viewModel.admin.Customer.ManageCustomer"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Customer Management" Height="450" Width="800">
+﻿<Page x:Class="FUMiniHotelSystem.viewModel.admin.customer.ManageCustomer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Customer Management" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -11,14 +11,14 @@
 
         <TextBlock Text="Customer Management" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
 
-        <DataGrid x:Name="CustomerDataGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10">
+        <DataGrid x:Name="CustomerDataGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
-                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="*"/>
-                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="*"/>
-                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
-                <DataGridTextColumn Header="BirthDay" Binding="{Binding BirthDay}" Width="*"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding CustomerId}" Width="50"/>
+                <DataGridTextColumn Header="Full Name" Binding="{Binding CustomerFullName}" Width="*"/>
+                <DataGridTextColumn Header="Phone" Binding="{Binding Telephone}" Width="*"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding EmailAddress}" Width="*"/>
+                <DataGridTextColumn Header="BirthDay" Binding="{Binding CustomerBirthday}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding CustomerStatus}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 
@@ -28,4 +28,4 @@
             <Button Content="Delete" Width="75" Margin="5" Click="DeleteButton_Click"/>
         </StackPanel>
     </Grid>
-</Window>
+</Page>

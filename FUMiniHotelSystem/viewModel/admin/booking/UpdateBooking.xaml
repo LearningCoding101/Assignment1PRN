@@ -63,22 +63,22 @@
         <StackPanel Grid.Column="0" Margin="20" Orientation="Vertical">
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Booking ID:" Style="{StaticResource textBox}" Width="83" />
-                <TextBox x:Name="BookingIdTextBox" Style="{StaticResource textBoxStyle}" IsReadOnly="True" Width="300" />
+                <TextBox x:Name="BookingIdTextBox"  IsReadOnly="True" Width="300" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Booking Date:" Style="{StaticResource textBox}" />
-                <DatePicker x:Name="BookingDatePicker" Style="{StaticResource datePickerStyle}" Width="300" />
+                <DatePicker x:Name="BookingDatePicker"  Width="300" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Total Price:" Style="{StaticResource textBox}" Width="82" />
-                <TextBox x:Name="TotalPriceTextBox" Style="{StaticResource textBoxStyle}" Width="300" />
+                <TextBox x:Name="TotalPriceTextBox"  Width="300" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Customer:" Style="{StaticResource textBox}" Width="86" />
-                <ComboBox x:Name="CustomerComboBox" Style="{StaticResource comboBoxStyle}"
+                <ComboBox x:Name="CustomerComboBox" 
                           DisplayMemberPath="CustomerFullName" SelectedValuePath="CustomerId"
                           ItemsSource="{Binding CustomerList}" Width="300" />
             </StackPanel>
@@ -87,24 +87,24 @@
         <StackPanel Grid.Column="1" Margin="20" Orientation="Vertical">
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Room:" Style="{StaticResource textBox}" Width="93" />
-                <ComboBox x:Name="RoomComboBox" Style="{StaticResource comboBoxStyle}"
+                <ComboBox x:Name="RoomComboBox" 
                           DisplayMemberPath="RoomDetailDescription" SelectedValuePath="RoomID"
                           ItemsSource="{Binding RoomList}" Width="300" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Start Date Time:" Style="{StaticResource textBox}" />
-                <DatePicker x:Name="StartDatePicker" Style="{StaticResource datePickerStyle}" Width="300" />
+                <DatePicker x:Name="StartDatePicker"  Width="300" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="End Date Time:" Style="{StaticResource textBox}" Width="92" />
-                <DatePicker x:Name="EndDatePicker" Style="{StaticResource datePickerStyle}" Width="300" />
+                <DatePicker x:Name="EndDatePicker"  Width="300" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Actual Price:" Style="{StaticResource textBox}" Width="95" />
-                <TextBox x:Name="ActualPriceTextBox" Style="{StaticResource textBoxStyle}" Width="300" />
+                <TextBox x:Name="ActualPriceTextBox"  Width="300" />
             </StackPanel>
 
             <Button Content="Update" Style="{StaticResource submit}" Click="Update_Click" Width="100" HorizontalAlignment="Right" />

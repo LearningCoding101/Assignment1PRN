@@ -1,4 +1,5 @@
 ﻿using FUMiniHotelSystem.viewModel.admin.booking;
+using FUMiniHotelSystem.viewModel.admin.customer;
 using FUMiniHotelSystem.viewModel.admin.room;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace FUMiniHotelSystem.viewModel.admin
             InitializeComponent();
             _pageCache = new Dictionary<string, Page>
             {
-                { "ManageCustomers", new viewRoom() },
+                { "ManageCustomers", new ManageCustomer() },
                 { "ManageRooms", new viewRoom() },
                 { "ManageBookings", new ManageBooking() },
                 { "GenerateReports", new viewRoom() }

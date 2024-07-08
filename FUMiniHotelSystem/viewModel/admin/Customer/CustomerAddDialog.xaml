@@ -1,4 +1,4 @@
-﻿<Window x:Class="FUMiniHotelSystem.viewModel.admin.Customer.CustomerAddDialog"
+﻿<Window x:Class="FUMiniHotelSystem.viewModel.admin.customer.CustomerAddDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Add Customer" Height="300" Width="400">

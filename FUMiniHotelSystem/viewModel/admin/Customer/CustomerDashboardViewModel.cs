@@ -1,5 +1,6 @@
 ﻿using FUMiniHotelSystem.dto;
 using FUMiniHotelSystem.service;
+using FUMiniHotelSystem.viewModel.admin.customer;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -26,10 +27,10 @@ namespace FUMiniHotelSystem.viewModel.Customer {
         }
 
         private void OpenCustomerProfile() {
-            var updateCustomerDialog = new UpdateCustomer(_customerService, CurrentCustomer.CustomerID);
+            var updateCustomerDialog = new UpdateCustomer(_customerService, CurrentCustomer.CustomerId);
             updateCustomerDialog.ShowDialog();
             // Reload customer data after potential update
-            CurrentCustomer = _customerService.GetCustomerById(CurrentCustomer.CustomerID);
+            CurrentCustomer = _customerService.GetCustomerById(CurrentCustomer.CustomerId);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
