@@ -16,6 +16,24 @@
     <Compile Update="viewModel\admin\booking\ViewBookingDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="viewModel\admin\Customer\CustomerAddDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\Customer\CustomerDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\Customer\CustomerProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\Customer\CustomerUpdateDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\Customer\ManageCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModel\admin\Customer\UpdateCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="viewModel\admin\dashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +55,24 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\booking\ViewBookingDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\Customer\CustomerAddDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\Customer\CustomerDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\Customer\CustomerProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\Customer\CustomerUpdateDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\Customer\ManageCustomer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModel\admin\Customer\UpdateCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\dashboard.xaml">
