@@ -1,8 +1,5 @@
 ﻿using FUMiniHotelSystem.dto;
 using FUMiniHotelSystem.model;
-using System;
-using System.Collections.Generic;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace FUMiniHotelSystem.service
 {
@@ -70,16 +67,19 @@ namespace FUMiniHotelSystem.service
 
             _bookingDetailRepository.Update(detailToUpdate);
         }
-        public void CancelBooking(int bookingReservationId)
+        public bool CancelBooking(int bookingReservationId)
         {
             var bookingDetails = _bookingDetailRepository.GetAll();
             var detailToDelete = bookingDetails.Find(bd => bd.BookingReservationID == bookingReservationId);
-            if (detailToDelete != null)
+            if (detailToDelete == null)
             {
-                _bookingDetailRepository.Delete(detailToDelete.BookingReservationID);
+                return false;
             }
+            
+            _bookingDetailRepository.Delete(detailToDelete.BookingReservationID);
 
             _bookingReservationRepository.Delete(bookingReservationId);
+            return true;
         }
 
         public List<BookingReservationDTO> GetAllBookings()

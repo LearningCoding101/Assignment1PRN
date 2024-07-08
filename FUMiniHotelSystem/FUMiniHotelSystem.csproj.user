@@ -25,6 +25,12 @@
     <Compile Update="viewModel\admin\room\viewRoom.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="view\ConfirmationDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\ViewReservation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -46,6 +52,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\room\viewRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\ConfirmationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\ViewReservation.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
