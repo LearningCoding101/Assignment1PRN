@@ -22,6 +22,7 @@
         </Frame>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
             <Button Content="AdminRoomTest" Click="NavigateTest" Margin="5"/>
+            <Button Content="ReservationList" Click="NavigateReservationList" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>
