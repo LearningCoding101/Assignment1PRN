@@ -1,6 +1,6 @@
 ﻿using FUMiniHotelSystem;
 using FUMiniHotelSystem.model;
-using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Odbc;
@@ -9,7 +9,7 @@ public class RoomRepository : IRepository<Room> {
     private readonly string _connectionString;
 
     public RoomRepository(string connectionString) {
-        _connectionString = connectionString;
+        _connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
     }
 
     public List<Room> GetAll() {
