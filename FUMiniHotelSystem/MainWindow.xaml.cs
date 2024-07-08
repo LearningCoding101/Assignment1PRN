@@ -1,4 +1,5 @@
-﻿using FUMiniHotelSystem.viewModel.admin;
+﻿using FUMiniHotelSystem.view;
+using FUMiniHotelSystem.viewModel.admin;
 using FUMiniHotelSystem.viewModel.admin.room;
 using System.Text;
 using System.Windows;
@@ -27,6 +28,11 @@ namespace FUMiniHotelSystem
         {
             MainFrame.NavigationService.Navigate(new dashboard());
 
+        }
+
+        private void NavigateReservationList(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new ViewReservation());
         }
     }
 }

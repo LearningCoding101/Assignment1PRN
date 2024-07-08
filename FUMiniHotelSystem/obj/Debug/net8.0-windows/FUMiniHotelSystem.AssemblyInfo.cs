@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FUMiniHotelSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+731b053ae9da328239bb0e5eabca5130cb6d0576")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f47563c6bc3a43d25ca381fe8854601287775ed3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FUMiniHotelSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FUMiniHotelSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
