@@ -15,6 +15,7 @@ namespace FUMiniHotelSystem.view
         private readonly BookingDetailRepository _bookingDetailRepository;
         private readonly BookingReservationRepository _bookingReservationRepository;
         private static string connectionString = ConfigurationManager.AppSettings["MyDbConnectionString"]!;
+        private readonly int _customerId;
 
         public ViewReservation()
         {
@@ -26,15 +27,27 @@ namespace FUMiniHotelSystem.view
             LoadData();
         }
 
+        public ViewReservation(int customerId)
+        {
+            InitializeComponent();
+
+            _bookingDetailRepository = new BookingDetailRepository(connectionString);
+            _bookingReservationRepository = new BookingReservationRepository(connectionString);
+            _service = new BookingService(_bookingReservationRepository, _bookingDetailRepository);
+            _customerId = customerId;
+            LoadData(customerId);
+        }
+
         private void LoadData()
         {
             var bookings = _service.GetAllBookings();
             ReservationList.ItemsSource = bookings;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void LoadData(int customerId)
         {
-
+            var bookings = _service.GetReservationsByCustomerId(customerId);
+            ReservationList.ItemsSource = bookings;
         }
 
         private void CancelReservationButton_Click(object sender, RoutedEventArgs e)
@@ -47,12 +60,46 @@ namespace FUMiniHotelSystem.view
                 
                 if(success)
                 {
-                    LoadData();
+                    LoadData(_customerId);
                 }
                 else
                 {
                     MessageBox.Show("Failed to cancel booking.");
                 }
+            }
+        }
+
+        private void ViewDetailButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ViewReservationButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoadData();
+        }
+
+        private void SettingButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new AccountSettings(_customerId));
+        }
+
+        private void SearchReservations(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if(int.TryParse(SearchReservation.Text, out int customerId))
+                {
+                    LoadData(customerId);
+                }
+                else
+                {
+                    LoadData(_customerId);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }
