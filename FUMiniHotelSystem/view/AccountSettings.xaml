@@ -1,0 +1,87 @@
+﻿<Page x:Class="FUMiniHotelSystem.view.AccountSettings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FUMiniHotelSystem.view"
+      xmlns:model="clr-namespace:FUMiniHotelSystem.model"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SettingsAccount">
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Header -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="MediumPurple" Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse Height="42" Width="42" Fill="Gray" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+            <Label Grid.Column="1" Content="FUMiniHotel" Foreground="White" FontFamily="Calibri" FontSize="25" VerticalAlignment="Center" Margin="10,0"/>
+            <Ellipse Grid.Column="2" Height="42" Width="42" Fill="Gray" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+        </Grid>
+
+        <!-- Sidebar -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Background="White" VerticalAlignment="Stretch" Margin="0,0,10,0">
+            <Button Content="Reservations" Width="150" Height="50" Background="White" BorderThickness="0" FontSize="14" Margin="10" Click="ViewReservationButton_Click"/>
+            <Button Content="Settings" Width="150" Height="50" Background="White" BorderThickness="0" FontSize="14" Margin="10" Click="SettingButton_Click"/>
+        </StackPanel>
+
+        <!-- Main Content -->
+        <StackPanel Grid.Row="1" Margin="10,19,10,0" VerticalAlignment="Top" Grid.Column="1">
+            <Label Content="Settings" FontFamily="Calibri" FontSize="18" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,0,20"/>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+                    <Label Content="Full Name:" Width="150" VerticalAlignment="Center"/>
+                    <TextBox x:Name="CustomerFullname" Width="342" Height="30" Text="{Binding CustomerFullname}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+                    <Label Content="Telephone:" Width="150" VerticalAlignment="Center"/>
+                    <TextBox x:Name="Telephone" Width="342" Height="30" Text="{Binding Telephone}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+                    <Label Content="Email Address:" Width="150" VerticalAlignment="Center"/>
+                    <TextBox x:Name="EmailAddress" Width="342" Height="30" Text="{Binding EmailAddress}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+                    <Label Content="Birthday:" Width="150" VerticalAlignment="Center"/>
+                    <DatePicker x:Name="CustomerBirthday" Width="342" Height="30" SelectedDate="{Binding CustomerBirthday}"/>
+                </StackPanel>
+            </StackPanel>
+
+            <Button Content="Save Changes" Width="150" Height="40" Margin="10,20,0,0" HorizontalAlignment="Center" Click="SaveChangesButton_Click" Background="MediumPurple" Foreground="White">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

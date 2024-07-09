@@ -43,6 +43,9 @@
     <Compile Update="viewModel\admin\room\viewRoom.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="view\AccountSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="view\ConfirmationDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -88,6 +91,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\room\viewRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\AccountSettings.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="view\ConfirmationDialog.xaml">

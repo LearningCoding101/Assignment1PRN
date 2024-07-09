@@ -20,60 +20,159 @@
             </Setter>
         </Style>
     </Page.Resources>
-    
-    <Grid Background="White">
+
+    <Grid Background="White" HorizontalAlignment="Stretch">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="297" Margin="173,153,0,0" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="627"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <Rectangle HorizontalAlignment="Left" Height="73" Margin="173,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="627"/>
+        <!-- Header -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="MediumPurple" Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse Height="42" Width="42" Fill="Gray" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+            <Label Grid.Column="1" Content="FUMiniHotel" Foreground="White" FontFamily="Calibri" FontSize="25" VerticalAlignment="Center" Margin="10,0"/>
+            <Ellipse Grid.Column="2" Height="42" Width="42" Fill="Gray" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+        </Grid>
 
-        <ListView Margin="173,153,0,0" Grid.RowSpan="2" x:Name="ReservationList" FontFamily="Calibri" FontSize="12">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="ID"  Width="75" DisplayMemberBinding="{Binding BookingReservationID}"/>
-                    <GridViewColumn Header="Date" Width="75" DisplayMemberBinding="{Binding BookingDate}"/>
-                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding TotalPrice}"/>
-                    <GridViewColumn Header="CustomerID" Width="75" DisplayMemberBinding="{Binding CustomerId}"/>
-                    <GridViewColumn Header="Status" Width="100" DisplayMemberBinding="{Binding Status}"/>
-                    <GridViewColumn Header="Actions" Width="200">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button Content="Cancel" Click="CancelReservationButton_Click"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Rectangle HorizontalAlignment="Center" Height="80" Fill="MediumPurple" Stroke="MediumPurple" VerticalAlignment="Top" Width="800"/>
-        <Label HorizontalAlignment="Left" Margin="189,98,0,0" VerticalAlignment="Top" Width="185" Foreground="Black" Content="Reservations" Height="38" VerticalContentAlignment="Center" FontFamily="Calibri" FontSize="18" FontWeight="DemiBold"/>
-        <Button HorizontalAlignment="Left" Margin="633,100,0,0" VerticalAlignment="Top" Width="157" Height="39" Foreground="White" Background="MediumPurple">
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" 
-                    BorderBrush="{TemplateBinding BorderBrush}" 
-                    BorderThickness="{TemplateBinding BorderThickness}" 
-                    CornerRadius="5">
-                        <!-- Giá trị CornerRadius để bo góc -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="New Reservation"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="10">
-            <TextBox HorizontalAlignment="Left" Margin="443,100,0,0" TextWrapping="Wrap" Text="Search Reservation" VerticalAlignment="Top" Width="163" Height="37" TextChanged="TextBox_TextChanged" VerticalContentAlignment="Center" x:Name="SearchReservation"/>
-        </Border>
-        <Label Content="FUMiniHotel" HorizontalAlignment="Left" Margin="72,22,0,0" VerticalAlignment="Top" Width="154" VerticalContentAlignment="Center" Foreground="White" FontFamily="Calibri" FontSize="25"/>
-        <Rectangle HorizontalAlignment="Left" Height="370" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="173" Grid.RowSpan="2"/>
-        <Button Content="Reservations" HorizontalAlignment="Left" Margin="24,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.851,0.012" Width="124" Height="33" Background="White" BorderThickness="0" FontSize="14"/>
-        <Button Content="Customers" HorizontalAlignment="Left" Margin="24,140,0,0" VerticalAlignment="Top" Height="33" Width="124" Background="White" BorderThickness="0" FontSize="14"/>
-        <Button Content="Settings" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Height="34" Width="124" Background="White" Grid.Row="1" BorderThickness="0" FontSize="14"/>
-        <Button Content="Rooms" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Height="33" Width="124" Background="White" BorderThickness="0" FontSize="14"/>
-        <Ellipse HorizontalAlignment="Left" Height="43" Margin="24,20,0,0" Stroke="Black" VerticalAlignment="Top" Width="43" Fill="Gray"/>
-        <Ellipse HorizontalAlignment="Left" Height="42" Margin="733,21,0,0" Stroke="Black" VerticalAlignment="Top" Width="42" Fill="Gray"/>
-        <Image HorizontalAlignment="Left" Height="35" Margin="674,22,0,0" VerticalAlignment="Top" Width="35"/>
+        <!-- Sidebar -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Background="White" VerticalAlignment="Stretch" Margin="0,0,10,0">
+            <Button Content="Reservations" Width="150" Height="50" Background="White" BorderThickness="0" FontSize="14" Margin="10" Click="ViewReservationButton_Click"/>
+            <Button Content="Settings" Width="150" Height="50" Background="White" BorderThickness="0" FontSize="14" Margin="10" Click="SettingButton_Click"/>
+        </StackPanel>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top content: Search and New Reservation -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Top" Margin="10">
+                <Label Content="Reservations" FontSize="18" FontWeight="DemiBold" Foreground="Black" VerticalAlignment="Center" FontFamily="Calibri" Margin="10,0"/>
+                <Border BorderBrush="White" BorderThickness="1" CornerRadius="5" Margin="10,0,0,0" Width="228">
+                    <TextBox Height="30" Padding="5" Text="{Binding Path=CustomerId, Mode=OneWay}" DataContext="{Binding ElementName=ReservationList, Path=SelectedItem}" VerticalContentAlignment="Center" x:Name="SearchReservation" Margin="13,0,-1,0"/>
+                </Border>
+                <Button Content="Search" VerticalAlignment="Center" Margin="10" Height="28" Width="58" Click="SearchReservations">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Width="157" Height="39" Background="MediumPurple" Foreground="White" Content="New Reservation">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+
+            <!-- Bottom content: ListView -->
+            <ListView Grid.Row="1" x:Name="ReservationList" Margin="10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" Width="100" DisplayMemberBinding="{Binding BookingReservationID}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding BookingReservationID}" TextAlignment="Right" Focusable="False"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Date" Width="200" DisplayMemberBinding="{Binding BookingDate}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding BookingDate}" TextAlignment="Right" Focusable="False"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Price" Width="150" DisplayMemberBinding="{Binding TotalPrice}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding TotalPrice}" TextAlignment="Right" Focusable="False"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Status" Width="200" DisplayMemberBinding="{Binding BookingStatus}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding BookingStatus, StringFormat={}{0:dd/MM/yyyy-HH:mm:ss}}" TextAlignment="Right" Focusable="False"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Actions" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <!-- Cancel button -->
+                                        <Button Grid.Column="0" Content="Cancel" Click="CancelReservationButton_Click" Background="OrangeRed" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Focusable="False">
+                                            <Button.Style>
+                                                <Style TargetType="Button">
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding BookingStatus}" Value="1">
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+
+                                        <!-- View button -->
+                                        <Button Grid.Column="1" Content="View" Click="ViewDetailButton_Click" Background="DodgerBlue" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Margin="5,0,0,0" Focusable="False">
+                                            <Button.Style>
+                                                <Style TargetType="Button">
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding BookingStatus}" Value="2">
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding BookingStatus}" Value="3">
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
     </Grid>
 </Page>

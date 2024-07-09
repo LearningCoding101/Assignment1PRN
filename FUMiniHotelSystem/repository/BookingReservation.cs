@@ -80,6 +80,34 @@ public class BookingReservationRepository : IRepository<BookingReservation>
         return bookingReservation;
     }
 
+    public List<BookingReservation> GetReservationsByCustomerId(int customerId)
+    {
+        var list = new List<BookingReservation>();
+        using( var connection = new OdbcConnection(_connectionString))
+        {
+            var query = "SELECT * FROM BookingReservation Where CustomerId = ?";
+            var command = new OdbcCommand(query, connection);
+            command.Parameters.AddWithValue("@CustomerId", customerId);
+
+            connection.Open();
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list.Add(new BookingReservation
+                    {
+                        BookingReservationID = reader.GetInt32(0),
+                        BookingDate = reader.GetDateTime(1),
+                        TotalPrice = reader.GetDecimal(2),
+                        CustomerId = reader.GetInt32(3),
+                        BookingStatus = reader.GetByte(4),
+                    });
+                }
+            }
+        }
+        return list;
+    }
+
     public void Add(BookingReservation bookingReservation)
     {
         string query = "INSERT INTO BookingReservation (BookingReservationID, BookingDate, TotalPrice, CustomerID, BookingStatus) VALUES (?, ?, ?, ?, ?)";

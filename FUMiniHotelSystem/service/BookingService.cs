@@ -89,6 +89,13 @@ namespace FUMiniHotelSystem.service
             return bookingReservationDTOs;
         }
 
+        public List<BookingReservationDTO> GetReservationsByCustomerId(int customerId)
+        {
+            var bookingReservations = _bookingReservationRepository.GetReservationsByCustomerId(customerId);
+            var bookingDTOs = MapToBookingReservationDTOs(bookingReservations);
+            return bookingDTOs;
+        }
+
         public List<BookingDetailDTO> GetAllBookingDetails()
         {
             var bookingDetails = _bookingDetailRepository.GetAll();
