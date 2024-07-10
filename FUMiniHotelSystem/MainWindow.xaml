@@ -10,19 +10,15 @@
         ResizeMode="NoResize">
 
     <Grid>
-        <Frame x:Name="MainFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
-            <Frame.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.031"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Frame.RenderTransform>
-        </Frame>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <Button Content="AdminRoomTest" Click="NavigateTest" Margin="5"/>
-            <Button Content="ReservationList" Click="NavigateReservationList" Margin="5"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="0">
+            <Button Content="Login" Click="LoginButton_Click" Margin="5"/>
         </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>

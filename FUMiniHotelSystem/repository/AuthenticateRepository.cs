@@ -26,7 +26,7 @@ namespace FUMiniHotelSystem.repository
                     if (reader.Read())
                     {
                         var storedPassword = reader.GetString(6);
-                        if(PasswordHasher.VerifyPassword(password, storedPassword))
+                        if(password.Equals(storedPassword))
                         {
                             return new Customer
                             {
@@ -34,7 +34,7 @@ namespace FUMiniHotelSystem.repository
                                 CustomerFullName = reader.GetString(1),
                                 Telephone = reader.GetString(2),
                                 EmailAddress = reader.GetString(3),
-                                CustomerBirthday = reader.GetDateTime(4),
+                                CustomerBirthday = DateTime.Parse(reader.GetString(4)),
                                 CustomerStatus = reader.GetByte(5),
                                 Password = reader.GetString(6)
                             };
