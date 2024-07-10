@@ -52,31 +52,41 @@ namespace FUMiniHotelSystem.view
 
         private void CancelReservationButton_Click(object sender, RoutedEventArgs e)
         {
-            if(sender is Button button && button.DataContext is BookingReservation booking)
-            {
-                var bookingId = booking.BookingReservationID;
+            var button = sender as Button;
 
-                bool success = _service.CancelBooking(bookingId);
-                
-                if(success)
+            var reservation = button?.DataContext as BookingReservation;
+
+            if (reservation != null)
+            {
+                MessageBoxResult result = MessageBox.Show("Are you sure you want to cancel this reservation?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
                 {
-                    LoadData(_customerId);
-                }
-                else
-                {
-                    MessageBox.Show("Failed to cancel booking.");
+                    // Hủy đặt chỗ trong cơ sở dữ liệu
+                    bool success = _service.CancelBooking(reservation.BookingReservationID);
+
+                    if (success)
+                    {
+                        // Cập nhật danh sách đặt chỗ trong ListView
+                        LoadData(_customerId);
+                        MessageBox.Show("Reservation canceled successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to cancel the reservation.");
+                    }
                 }
             }
         }
 
         private void ViewDetailButton_Click(object sender, RoutedEventArgs e)
         {
-
+            LoadData(_customerId);
         }
 
         private void ViewReservationButton_Click(object sender, RoutedEventArgs e)
         {
-            LoadData();
+            LoadData(_customerId);
         }
 
         private void SettingButton_Click(object sender, RoutedEventArgs e)
