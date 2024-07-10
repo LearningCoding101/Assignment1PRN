@@ -123,7 +123,7 @@
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <!-- Cancel button -->
-                                        <Button Grid.Column="0" Content="Cancel" Click="CancelReservationButton_Click" Background="OrangeRed" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Focusable="False">
+                                        <Button Grid.Column="0" Content="Cancel" Click="CancelReservationButton_Click" Background="OrangeRed" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Focusable="True">
                                             <Button.Style>
                                                 <Style TargetType="Button">
                                                     <Setter Property="Visibility" Value="Collapsed"/>
@@ -143,6 +143,7 @@
                                             </Button.Template>
                                         </Button>
 
+                                        
                                         <!-- View button -->
                                         <Button Grid.Column="1" Content="View" Click="ViewDetailButton_Click" Background="DodgerBlue" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Margin="5,0,0,0" Focusable="False">
                                             <Button.Style>

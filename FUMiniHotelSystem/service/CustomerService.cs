@@ -18,16 +18,11 @@ namespace FUMiniHotelSystem.service
         }
         public List<CustomerDTO> GetAllCustomers()
         {
-            List<CustomerDTO> result = new List<CustomerDTO>();
-
-            List<Customer> customerList = _customerRepository.GetAll();
-            for(int i = 0; i < customerList.Count; i++)
-            {
-                result.Add(CustomerMapper.MapCustomerToCustomerDTO(customerList[i]));
-            }
-
-            return result;
+            return _customerRepository.GetAll()
+                .Select(CustomerMapper.MapCustomerToCustomerDTO)
+                .ToList();
         }
+
         public CustomerDTO GetCustomerById(int id)
         {
             return CustomerMapper.MapCustomerToCustomerDTO(_customerRepository.GetById(id));
@@ -48,20 +43,11 @@ namespace FUMiniHotelSystem.service
 
         public CustomerDTO? SearchCustomer(string keyword)
         {
-            List<Customer> customers = _customerRepository.GetAll();
-
-            foreach (var customer in customers)
-            {
-                CustomerDTO customerDTO = CustomerMapper.MapCustomerToCustomerDTO(customer);
-
-                if ((!string.IsNullOrEmpty(customerDTO.CustomerFullName) && customerDTO.CustomerFullName.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0) ||
-                    (!string.IsNullOrEmpty(customerDTO.EmailAddress) && customerDTO.EmailAddress.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0))
-                {
-                    return customerDTO; 
-                }
-            }
-
-            return null; 
+            return _customerRepository.GetAll()
+                .Select(CustomerMapper.MapCustomerToCustomerDTO)
+                .FirstOrDefault(c =>
+                    (!string.IsNullOrEmpty(c.CustomerFullName) && c.CustomerFullName.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0) ||
+                    (!string.IsNullOrEmpty(c.EmailAddress) && c.EmailAddress.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0));
         }
 
     }

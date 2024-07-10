@@ -3,7 +3,83 @@
   "WorkspaceRootPath": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\booking\\updatebooking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\view\\viewreservation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\view\\viewreservation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\service\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\service\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\view\\viewreservation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\view\\viewreservation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\view\\confirmationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\view\\confirmationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\view\\accountsettings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\view\\accountsettings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\booking\\viewbookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\booking\\viewbookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\room\\addroomdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\addroomdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customeradddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customeradddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\managecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\managecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\booking\\updatebooking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\booking\\updatebooking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\booking\\managebooking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\booking\\viewbookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\booking\\viewbookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\booking\\updatebooking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\booking\\updatebooking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -35,75 +107,35 @@
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\addroomdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\service\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\service\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\room\\addroomdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\addroomdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\room\\viewroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customeradddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customeradddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerupdatedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\managecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\managecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\managecustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\managecustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\login\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\login\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\login\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\login\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\login\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\login\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -127,10 +159,6 @@
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -143,7 +171,7 @@
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\viewmodel\\admin\\login\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\login\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\login\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -151,24 +179,12 @@
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|d:\\workingprn\\fuminihotelsystem\\assignment1prn\\fuminihotelsystem\\repository\\iauthenticaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\repository\\iauthenticaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\repository\\iauthenticaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\updatecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\viewmodel\\admin\\customer\\customerprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\viewmodel\\admin\\customer\\customerprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\repository\\bookingdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -185,10 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\repository\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\repository\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\view\\confirmationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|solutionrelative:fuminihotelsystem\\view\\confirmationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9A915F5-96CF-4D66-888B-3200813C884C}|FUMiniHotelSystem\\FUMiniHotelSystem.csproj|D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\fuminihotelsystem\\model\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -241,11 +253,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "ManageCustomer.xaml.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\ManageCustomer.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\ManageCustomer.xaml.cs",
@@ -254,8 +266,7 @@
               "ViewState": "AQIAAA4AAAAAAAAAAAAAACQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T13:32:45.921Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -279,179 +290,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManageBooking.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAmwDsAAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T05:54:29.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewBookingDetail.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAQwCMAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T07:25:15.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateBooking.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAqwFAAAAAMAAAA",
+              "Title": "ViewReservation.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\ViewReservation.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\view\\ViewReservation.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\ViewReservation.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\view\\ViewReservation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-10T14:31:01.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\RoomService.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\RoomService.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\RoomService.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\service\\RoomService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAawBoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T06:53:29.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\BookingService.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\BookingService.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\BookingService.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\service\\BookingService.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAhwG4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T13:36:38.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ManageBooking.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T05:32:07.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewBookingDetail.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T07:24:50.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateBooking.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T06:52:49.536Z",
+              "WhenOpened": "2024-07-03T07:10:45.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AddRoomDialog.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T14:19:33.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddRoomDialog.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-07T05:04:03.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\CustomerService.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\CustomerService.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\CustomerService.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\service\\CustomerService.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAA3wC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T07:31:18.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "BookingDetailRepository.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T06:46:35.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "RoomTypeRepository.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T07:35:55.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "BookingReservation.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingReservation.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\BookingReservation.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingReservation.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\repository\\BookingReservation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:18:32.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
               "Title": "ConfirmationDialog.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\ConfirmationDialog.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\view\\ConfirmationDialog.xaml",
               "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\ConfirmationDialog.xaml",
               "RelativeToolTip": "FUMiniHotelSystem\\view\\ConfirmationDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-08T13:29:05.585Z"
+              "WhenOpened": "2024-07-08T13:29:05.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "viewRoom.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml",
@@ -463,20 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\RoomService.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\RoomService.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\RoomService.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\service\\RoomService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T07:10:45.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "CustomerDashboard.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerDashboard.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerDashboard.xaml",
@@ -488,32 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "viewRoom.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAIAwwC0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T15:06:17.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CustomerUpdateDialog.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-08T13:53:38.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "CustomerDashboardViewModel.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerDashboardViewModel.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerDashboardViewModel.cs",
@@ -526,33 +364,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\App.config",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\App.config",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\App.config",
-              "RelativeToolTip": "FUMiniHotelSystem\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-07-03T06:54:28.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\MainWindow.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAlwDwAAAAMAAAA",
+              "DocumentIndex": 4,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\CustomerService.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\CustomerService.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\CustomerService.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\service\\CustomerService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:24:38.261Z",
+              "WhenOpened": "2024-07-03T07:31:18.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\AuthenticationService.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\AuthenticationService.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\service\\AuthenticationService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T06:46:30.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ViewBookingDetail.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-05T07:24:50.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountSettings.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\AccountSettings.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\view\\AccountSettings.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\AccountSettings.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\view\\AccountSettings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-10T14:31:24.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewReservation.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\ViewReservation.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\view\\ViewReservation.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\view\\ViewReservation.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\view\\ViewReservation.xaml.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAlwDoAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T14:32:14.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T13:51:11.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "viewRoom.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\room\\viewRoom.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAIAwwC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T15:06:17.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CustomerAddDialog.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerAddDialog.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerAddDialog.xaml",
@@ -564,20 +464,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CustomerUpdateDialog.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 23,
+              "Title": "ManageBooking.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-05T05:32:07.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ViewBookingDetail.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ViewBookingDetail.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwCMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:11:50.46Z",
+              "WhenOpened": "2024-07-05T07:25:15.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\MainWindow.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAlwDwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T14:24:38.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\BookingService.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\BookingService.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\BookingService.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\service\\BookingService.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAhwG4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T13:36:38.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddRoomDialog.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-07T05:04:03.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "UpdateCustomer.xaml.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\UpdateCustomer.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\UpdateCustomer.xaml.cs",
@@ -585,12 +531,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\UpdateCustomer.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:11:38.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T14:11:38.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "BookingReservation.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\model\\BookingReservation.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\model\\BookingReservation.cs",
@@ -602,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "BookingReservationDTO.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\BookingReservationDTO.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\BookingReservationDTO.cs",
@@ -614,7 +559,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 24,
+              "Title": "UpdateBooking.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-05T06:52:49.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddRoomDialog.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\room\\AddRoomDialog.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:19:33.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T14:07:33.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T13:35:10.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "UpdateCustomer.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\UpdateCustomer.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\UpdateCustomer.xaml",
@@ -626,51 +618,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "CustomerProfile.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-08T13:28:56.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T13:36:08.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "LoginRequestDTO.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\dto\\LoginRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 19,
+              "Title": "UpdateBooking.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\UpdateBooking.xaml.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAqwE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:07:33.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:35:10.021Z",
+              "WhenOpened": "2024-07-05T06:53:29.65Z",
               "EditorCaption": ""
             },
             {
@@ -687,7 +643,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 15,
+              "Title": "CustomerProfile.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-08T13:28:56.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "RoomTypeRepository.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\repository\\RoomTypeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T07:35:55.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "BookingReservation.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingReservation.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\BookingReservation.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingReservation.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\repository\\BookingReservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T14:18:32.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\App.config",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\App.config",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\App.config",
+              "RelativeToolTip": "FUMiniHotelSystem\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-03T06:54:28.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml.cs",
@@ -695,12 +699,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:06:17.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T14:06:17.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "Dashboard.xaml.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml.cs",
@@ -708,24 +711,70 @@
               "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T13:57:07.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T13:57:07.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
-              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\Dashboard.xaml",
+              "DocumentIndex": 16,
+              "Title": "CustomerUpdateDialog.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-04T13:51:11.355Z",
+              "WhenOpened": "2024-07-08T13:53:38.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\login\\RegisterPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-10T13:36:08.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ManageBooking.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\booking\\ManageBooking.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwDsAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T05:54:29.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CustomerUpdateDialog.xaml.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\customer\\CustomerUpdateDialog.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T14:11:50.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "BookingDetailRepository.cs",
+              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
+              "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
+              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
+              "RelativeToolTip": "FUMiniHotelSystem\\repository\\BookingDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T06:46:35.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "IAuthenticateRepository.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\IAuthenticateRepository.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\IAuthenticateRepository.cs",
@@ -733,12 +782,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\repository\\IAuthenticateRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:40:59.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:40:59.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "CustomerMapper.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\utility\\CustomerMapper.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\utility\\CustomerMapper.cs",
@@ -746,25 +794,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\utility\\CustomerMapper.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAgwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:14:35.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T14:14:35.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "FUMiniHotelSystem\\service\\AuthenticationService.cs",
-              "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\service\\AuthenticationService.cs",
-              "RelativeToolTip": "FUMiniHotelSystem\\service\\AuthenticationService.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T06:46:30.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\model\\Customer.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\model\\Customer.cs",
@@ -772,12 +806,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\model\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T12:46:50.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T12:46:50.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "CustomerDTO.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\CustomerDTO.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\CustomerDTO.cs",
@@ -785,12 +818,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\dto\\CustomerDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:18:18.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T14:18:18.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "AuthenticateRepository.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\AuthenticateRepository.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\AuthenticateRepository.cs",
@@ -798,12 +830,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\repository\\AuthenticateRepository.cs",
               "ViewState": "AQIAAEsAAAAAAAAAAAAAACgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T06:22:26.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T06:22:26.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\App.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\App.xaml.cs",
@@ -811,12 +842,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T06:47:42.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T06:47:42.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\AssemblyInfo.cs",
@@ -824,36 +854,33 @@
               "RelativeToolTip": "FUMiniHotelSystem\\AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:25:52.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T14:25:52.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\MainWindow.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\MainWindow.xaml",
               "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\MainWindow.xaml",
               "RelativeToolTip": "FUMiniHotelSystem\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-02T14:09:32.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T14:09:32.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml",
               "ToolTip": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml",
               "RelativeToolTip": "FUMiniHotelSystem\\viewModel\\admin\\login\\LoginPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T13:34:56.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:34:56.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\CustomerRepository.cs",
@@ -861,12 +888,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\repository\\CustomerRepository.cs",
               "ViewState": "AQIAAEcAAAAAAAAAAAAgwFUAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:14:25.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T14:14:25.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "RoomRepository.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\repository\\RoomRepository.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\repository\\RoomRepository.cs",
@@ -878,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "BookingDetailDTO.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\BookingDetailDTO.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\BookingDetailDTO.cs",
@@ -890,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "BookingDetail.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\model\\BookingDetail.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\model\\BookingDetail.cs",
@@ -902,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "FullBookingDetail.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\FullBookingDetail.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\FullBookingDetail.cs",
@@ -914,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "RoomDTO.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\RoomDTO.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\RoomDTO.cs",
@@ -926,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "Room.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\model\\Room.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\model\\Room.cs",
@@ -938,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "RoomTypeDTO.cs",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\dto\\RoomTypeDTO.cs",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\dto\\RoomTypeDTO.cs",
@@ -950,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "FUMiniHotelSystem.csproj",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\FUMiniHotelSystem.csproj",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\FUMiniHotelSystem.csproj",
@@ -958,12 +984,11 @@
               "RelativeToolTip": "FUMiniHotelSystem\\FUMiniHotelSystem.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-02T14:09:23.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T14:09:23.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\workingPRN\\FUMiniHotelSystem\\Assignment1PRN\\FUMiniHotelSystem\\App.xaml",
               "RelativeDocumentMoniker": "FUMiniHotelSystem\\App.xaml",
@@ -975,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
               "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs [Read Only]",

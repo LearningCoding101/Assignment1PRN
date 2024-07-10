@@ -21,14 +21,9 @@ namespace FUMiniHotelSystem.service
 
         public List<RoomDTO> GetAllRooms()
         {
-            List<Room> rooms = _roomRepository.GetAll();
-            List<RoomDTO> result = new List<RoomDTO>();
-            foreach (var room in rooms)
-            {
-                RoomType roomType = _roomTypeRepository.GetById(room.RoomTypeID);
-                result.Add(RoomMapper.MapRoomToRoomDTO(room, roomType));
-            }
-            return result;
+            return _roomRepository.GetAll()
+                .Select(room => RoomMapper.MapRoomToRoomDTO(room, _roomTypeRepository.GetById(room.RoomTypeID)))
+                .ToList();
         }
 
         public RoomDTO GetRoomById(int id)
