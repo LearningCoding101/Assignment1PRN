@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
-namespace FUMiniHotelSystem.viewModel.Customer {
+namespace FUMiniHotelSystem.viewModel.customer {
     public class CustomerDashboardViewModel: INotifyPropertyChanged {
         private readonly CustomerService _customerService;
 

@@ -102,5 +102,9 @@ namespace FUMiniHotelSystem.view
                 throw;
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e) {
+
+        }
     }
 }
