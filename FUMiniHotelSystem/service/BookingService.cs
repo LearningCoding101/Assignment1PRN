@@ -69,16 +69,14 @@ namespace FUMiniHotelSystem.service
         }
         public bool CancelBooking(int bookingReservationId)
         {
-            var bookingDetails = _bookingDetailRepository.GetAll();
-            var detailToDelete = bookingDetails.Find(bd => bd.BookingReservationID == bookingReservationId);
-            if (detailToDelete == null)
-            {
+            var bookingReservation = _bookingReservationRepository.GetById(bookingReservationId);
+            if (bookingReservation == null) {
                 return false;
             }
-            
-            _bookingDetailRepository.Delete(detailToDelete.BookingReservationID);
 
-            _bookingReservationRepository.Delete(bookingReservationId);
+            bookingReservation.BookingStatus = 0; // Assuming 0 represents a canceled status
+            _bookingReservationRepository.Update(bookingReservation);
+
             return true;
         }
 
