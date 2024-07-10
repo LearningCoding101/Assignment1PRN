@@ -30,15 +30,11 @@ namespace FUMiniHotelSystem.viewModel.admin.room
             _roomService = roomService;
             _roomId = roomId;
 
-            // Load room data if editing existing room
+            RoomTypeComboBox.ItemsSource = _roomService.GetAllRoomTypes();
+
             if (_roomId.HasValue)
             {
                 LoadRoomData(_roomId.Value);
-            }
-            else
-            {
-                // Load room types into the combo box for new room addition
-                RoomTypeComboBox.ItemsSource = _roomService.GetAllRoomTypes();
             }
         }
 
@@ -47,11 +43,18 @@ namespace FUMiniHotelSystem.viewModel.admin.room
             var room = _roomService.GetRoomById(roomId);
             RoomNumberTextBox.Text = room.RoomNumber;
             RoomDescriptionTextBox.Text = room.RoomDetailDescription;
-            RoomTypeComboBox.SelectedItem = room.RoomType.RoomTypeName;
+            RoomTypeComboBox.SelectedItem = RoomTypeComboBox.Items.Cast<RoomTypeDTO>()
+        .FirstOrDefault(rt => rt.RoomTypeID == room.RoomType.RoomTypeID);
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            if (RoomTypeComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a room type.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             var roomDTO = new RoomDTO
             {
                 RoomID = _roomId ?? 0,
@@ -60,17 +63,24 @@ namespace FUMiniHotelSystem.viewModel.admin.room
                 RoomType = (RoomTypeDTO)RoomTypeComboBox.SelectedItem
             };
 
-            if (_roomId.HasValue)
+            try
             {
-                _roomService.UpdateRoom(roomDTO);
-            }
-            else
-            {
-                _roomService.AddRoom(roomDTO);
-            }
+                if (_roomId.HasValue)
+                {
+                    _roomService.UpdateRoom(roomDTO);
+                }
+                else
+                {
+                    _roomService.AddRoom(roomDTO);
+                }
 
-            DialogResult = true;
-            Close();
+                DialogResult = true;
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

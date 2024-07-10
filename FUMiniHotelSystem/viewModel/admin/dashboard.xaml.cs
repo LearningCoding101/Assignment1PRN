@@ -12,11 +12,11 @@ namespace FUMiniHotelSystem.viewModel.admin
     /// <summary>
     /// Interaction logic for dashboard.xaml
     /// </summary>
-    public partial class dashboard : Page
+    public partial class Dashboard : Page
     {
         private readonly Dictionary<string, Page> _pageCache;
 
-        public dashboard()
+        public Dashboard()
         {
             InitializeComponent();
             _pageCache = new Dictionary<string, Page>

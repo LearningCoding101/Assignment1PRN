@@ -29,21 +29,35 @@ namespace FUMiniHotelSystem.viewModel.admin.booking
             _bookingService = bookingService;
             _bookingReservationId = bookingReservationId;
 
-            // Load existing booking details
             LoadData();
         }
         private void LoadData()
         {
             var bookingReservation = _bookingService.GetBookingById(_bookingReservationId);
-            BookingIdTextBox.Text = bookingReservation.BookingReservationID.ToString();
-            BookingDatePicker.SelectedDate = bookingReservation.BookingDate;
-            TotalPriceTextBox.Text = bookingReservation.TotalPrice.ToString();
-            CustomerIdTextBox.Text = bookingReservation.CustomerId.ToString();
+            if (bookingReservation != null)
+            {
+                BookingIdTextBox.Text = bookingReservation.BookingReservationID.ToString();
+                BookingDatePicker.SelectedDate = bookingReservation.BookingDate;
+                TotalPriceTextBox.Text = bookingReservation.TotalPrice.ToString();
+                CustomerIdTextBox.Text = bookingReservation.CustomerId.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Booking reservation not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
             var bookingDetail = _bookingService.GetBookingDetail(_bookingReservationId);
-            StartDatePicker.SelectedDate = bookingDetail.StartDate;
-            EndDatePicker.SelectedDate = bookingDetail.EndDate;
-            ActualPriceTextBox.Text = bookingDetail.ActualPrice.ToString();
+            if (bookingDetail != null)
+            {
+                StartDatePicker.SelectedDate = bookingDetail.StartDate;
+                EndDatePicker.SelectedDate = bookingDetail.EndDate;
+                ActualPriceTextBox.Text = bookingDetail.ActualPrice.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Booking detail not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

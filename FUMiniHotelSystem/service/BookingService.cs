@@ -105,6 +105,10 @@ namespace FUMiniHotelSystem.service
         public BookingDetailDTO GetBookingDetail(int id)
         {
             var detail = _bookingDetailRepository.GetById(id);
+            if (detail == null)
+            {
+                return null;
+            }
             var dto = new BookingDetailDTO
             {
                 BookingReservationID = detail.BookingReservationID,

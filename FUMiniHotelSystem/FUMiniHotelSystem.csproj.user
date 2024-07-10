@@ -34,7 +34,7 @@
     <Compile Update="viewModel\admin\customer\UpdateCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="viewModel\admin\dashboard.xaml.cs">
+    <Compile Update="viewModel\admin\Dashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="viewModel\admin\room\AddRoomDialog.xaml.cs">
@@ -84,7 +84,7 @@
     <Page Update="viewModel\admin\customer\UpdateCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="viewModel\admin\dashboard.xaml">
+    <Page Update="viewModel\admin\Dashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="viewModel\admin\room\AddRoomDialog.xaml">

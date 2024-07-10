@@ -27,7 +27,7 @@ namespace FUMiniHotelSystem {
         }
 
         private void NavigateTest(object sender, RoutedEventArgs e) {
-            MainFrame.NavigationService.Navigate(new dashboard());
+            MainFrame.NavigationService.Navigate(new Dashboard());
 
         }
 
@@ -42,9 +42,23 @@ namespace FUMiniHotelSystem {
             loginPopUp.ShowDialog();
             this.Show();
         }
+
         private void LoginPopUp_LoginSuccessful(object sender, LoginEventArgs e) {
             LoggedInUser = e.Customer.CustomerFullName;
-            MainFrame.NavigationService.Navigate(new ViewReservation(e.Customer.CustomerId));
+            String Role = e.Role;
+            if (Role == "Admin")
+            {
+                Dashboard adminWindow = new Dashboard();
+                MainFrame.NavigationService.Navigate(adminWindow);
+            }
+            else
+            {
+                ViewReservation customerWindow = new ViewReservation(e.Customer.CustomerId);
+                MainFrame.NavigationService.Navigate(customerWindow);
+
+            }
+
+            
         }
     }
 }
