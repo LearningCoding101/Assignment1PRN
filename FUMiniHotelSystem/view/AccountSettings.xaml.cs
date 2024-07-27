@@ -38,6 +38,7 @@ namespace FUMiniHotelSystem.view
             Telephone.Text = customer.Telephone;
             EmailAddress.Text = customer.EmailAddress;
             CustomerBirthday.Text = customer.CustomerBirthday.ToString();
+            Password.Password = customer.Password;
         }
 
         private void SaveChangesButton_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -51,9 +52,10 @@ namespace FUMiniHotelSystem.view
                 EmailAddress = EmailAddress.Text,
                 CustomerBirthday = DateTime.Parse(CustomerBirthday.Text),
                 CustomerStatus = findCustimer.CustomerStatus,
-                Password = findCustimer.Password,
+                Password = Password.Password,
             };
             _customerService.UpdateCustomer(customer);
+            LoadData(_customerId);
         }
 
         private void SettingButton_Click(object sender, System.Windows.RoutedEventArgs e)

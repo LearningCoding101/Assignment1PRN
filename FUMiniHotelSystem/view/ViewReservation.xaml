@@ -54,13 +54,15 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
             </Grid.RowDefinitions>
 
             <!-- Top content: Search and New Reservation -->
             <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Top" Margin="10">
                 <Label Content="Reservations" FontSize="18" FontWeight="DemiBold" Foreground="Black" VerticalAlignment="Center" FontFamily="Calibri" Margin="10,0"/>
                 <Border BorderBrush="White" BorderThickness="1" CornerRadius="5" Margin="10,0,0,0" Width="228">
-                    <TextBox Height="30" Padding="5" Text="{Binding Path=CustomerId, Mode=OneWay}" DataContext="{Binding ElementName=ReservationList, Path=SelectedItem}" VerticalContentAlignment="Center" x:Name="SearchReservation" Margin="13,0,-1,0"/>
+                    <TextBox Height="30" Padding="5" Text="{Binding Path=CustomerId, Mode=OneWay}" DataContext="{Binding ElementName=ReservationDataGrid, Path=SelectedItem}" VerticalContentAlignment="Center" x:Name="SearchReservation" Margin="13,0,-1,0"/>
                 </Border>
                 <Button Content="Search" VerticalAlignment="Center" Margin="10" Height="28" Width="58" Click="SearchReservations">
                     <Button.Template>
@@ -82,98 +84,29 @@
                 </Button>
             </StackPanel>
 
-            <!-- Bottom content: ListView -->
-            <ListView Grid.Row="1" x:Name="ReservationList" Margin="10">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="ID" Width="100" DisplayMemberBinding="{Binding BookingReservationID}">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding BookingReservationID}" TextAlignment="Right" Focusable="False"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                        <GridViewColumn Header="Date" Width="200" DisplayMemberBinding="{Binding BookingDate}">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding BookingDate}" TextAlignment="Right" Focusable="False"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                        <GridViewColumn Header="Price" Width="150" DisplayMemberBinding="{Binding TotalPrice}">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding TotalPrice}" TextAlignment="Right" Focusable="False"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                        <GridViewColumn Header="Status" Width="200" DisplayMemberBinding="{Binding BookingStatus}">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding BookingStatus, StringFormat={}{0:dd/MM/yyyy-HH:mm:ss}}" TextAlignment="Right" Focusable="False"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                        <GridViewColumn Header="Actions" Width="100">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
-                                        <!-- Cancel button -->
-                                        <Button Grid.Column="0" Content="Cancel" Click="CancelReservationButton_Click" Background="OrangeRed" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Focusable="True">
-                                            <Button.Style>
-                                                <Style TargetType="Button">
-                                                    <Setter Property="Visibility" Value="Collapsed"/>
-                                                    <Style.Triggers>
-                                                        <DataTrigger Binding="{Binding BookingStatus}" Value="1">
-                                                            <Setter Property="Visibility" Value="Visible"/>
-                                                        </DataTrigger>
-                                                    </Style.Triggers>
-                                                </Style>
-                                            </Button.Style>
-                                            <Button.Template>
-                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                    </Border>
-                                                </ControlTemplate>
-                                            </Button.Template>
-                                        </Button>
+            <!-- Bottom content: DataGrid -->
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-                                        
-                                        <!-- View button -->
-                                        <Button Grid.Column="1" Content="View" Click="ViewDetailButton_Click" Background="DodgerBlue" FontFamily="Calibri" FontSize="15" HorizontalAlignment="Right" Foreground="White" Margin="5,0,0,0" Focusable="False">
-                                            <Button.Style>
-                                                <Style TargetType="Button">
-                                                    <Setter Property="Visibility" Value="Collapsed"/>
-                                                    <Style.Triggers>
-                                                        <DataTrigger Binding="{Binding BookingStatus}" Value="2">
-                                                            <Setter Property="Visibility" Value="Visible"/>
-                                                        </DataTrigger>
-                                                        <DataTrigger Binding="{Binding BookingStatus}" Value="3">
-                                                            <Setter Property="Visibility" Value="Visible"/>
-                                                        </DataTrigger>
-                                                    </Style.Triggers>
-                                                </Style>
-                                            </Button.Style>
-                                            <Button.Template>
-                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                    </Border>
-                                                </ControlTemplate>
-                                            </Button.Template>
-                                        </Button>
-                                    </Grid>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+                <DataGrid x:Name="ReservationDataGrid" Grid.Row="0" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationID}" Width="50"/>
+                        <DataGridTextColumn Header="Date" Binding="{Binding BookingDate}" Width="*"/>
+                        <DataGridTextColumn Header="Price" Binding="{Binding TotalPrice}" Width="*"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding BookingStatus}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Center" Margin="10">
+                    <Button Content="Cancel" Width="75" Margin="5" Click="CancelButton_Click"/>
+                    
+                </StackPanel>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

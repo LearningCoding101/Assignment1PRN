@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="0">
-            <Button Content="Login" Click="LoginButton_Click" Margin="5"/>
+            <Button x:Name="LoginLogoutButton" Content="Login" Click="LoginLogoutButton_Click" Margin="5"/>
         </StackPanel>
 
         <Frame x:Name="MainFrame" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>

@@ -24,6 +24,7 @@ namespace FUMiniHotelSystem {
         public string LoggedInUser { get; set; }
         public MainWindow() {
             InitializeComponent();
+            UpdateLoginLogoutButton();
         }
 
         private void NavigateTest(object sender, RoutedEventArgs e) {
@@ -35,11 +36,20 @@ namespace FUMiniHotelSystem {
             MainFrame.NavigationService.Navigate(new ViewReservation());
         }
 
-        private void LoginButton_Click(object sender, RoutedEventArgs e) {
-            this.Hide(); // Hide the main window
-            LoginPage loginPopUp = new LoginPage();
-            loginPopUp.LoginSuccessful += LoginPopUp_LoginSuccessful;
-            loginPopUp.ShowDialog();
+        private void LoginLogoutButton_Click(object sender, RoutedEventArgs e) {
+            this.Hide();
+            if (LoggedInUser == null) {
+                // Show login window
+                LoginPage loginPopUp = new LoginPage();
+                loginPopUp.LoginSuccessful += LoginPopUp_LoginSuccessful;
+                loginPopUp.ShowDialog();
+                UpdateLoginLogoutButton();
+            } else {
+                // Logout logic
+                LoggedInUser = null;
+                UpdateLoginLogoutButton();
+                MainFrame.Content = null; // Clear the frame content or navigate to a default page
+            }
             this.Show();
         }
 
@@ -59,6 +69,13 @@ namespace FUMiniHotelSystem {
             }
 
             
+        }
+        private void UpdateLoginLogoutButton() {
+            if (LoggedInUser == null) {
+                LoginLogoutButton.Content = "Login";
+            } else {
+                LoginLogoutButton.Content = "Logout";
+            }
         }
     }
 }
