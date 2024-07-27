@@ -49,6 +49,9 @@
     <Compile Update="view\ConfirmationDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="view\NewReservation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="view\ViewReservation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -97,6 +100,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="view\ConfirmationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\NewReservation.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="view\ViewReservation.xaml">

@@ -104,7 +104,10 @@ namespace FUMiniHotelSystem.view
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
+            var newReservationWindow = new NewReservation(_customerId);
+            newReservationWindow.ShowDialog();
 
+            LoadData(_customerId);
         }
     }
 }
